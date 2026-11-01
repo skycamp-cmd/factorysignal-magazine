@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T23:22:52Z",
+ "updatedAt": "2026-11-01T05:59:58Z",
  "markets": [
   {
    "id": "562830",
@@ -24,24 +24,13 @@
    "status": "live"
   },
   {
-   "id": "5170735",
-   "q": "비트코인이 10월에 8만 7,500달러에 도달할까?",
-   "en": "Will Bitcoin reach $87,500 in October?",
-   "cat": "코인",
-   "event": "what-price-will-bitcoin-hit-in-october-2026",
-   "endDate": "2026-11-01T04:00:00Z",
-   "last": 1.3,
-   "addedAt": "2026-10-20T07:22:48Z",
-   "status": "live"
-  },
-  {
    "id": "4397033",
    "q": "빌리빌리 게이밍이 2026 롤드컵에서 우승할까?",
    "en": "Will Bilibili Gaming win Worlds 2026?",
    "cat": "스포츠",
    "event": "worlds-2026-winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 10.4,
+   "last": 15.0,
    "addedAt": "2026-10-20T07:22:48Z",
    "status": "live"
   },
@@ -77,7 +66,7 @@
    "event": "military-action-against-saudi-oil-pipeline-east-west-byptptpt",
    "eventTitle": "Military action against Saudi Oil Pipeline (East-West) by...?",
    "endDate": "2026-11-30T20:59:00Z",
-   "last": 35.5,
+   "last": 37.5,
    "addedAt": "2026-10-27T05:01:49Z",
    "status": "live"
   },
@@ -89,7 +78,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 28.0,
+   "last": 27.5,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -116,6 +105,32 @@
    "last": 81.5,
    "addedAt": "2026-10-31T23:22:52Z",
    "status": "live"
+  },
+  {
+   "id": "5603325",
+   "q": "치프스가 브롱코스를 이길까?",
+   "en": "Will Chiefs beat Broncos? (Chiefs vs. Broncos)",
+   "cat": "스포츠",
+   "event": "nfl-kc-den-2026-11-01",
+   "eventTitle": "Chiefs vs. Broncos",
+   "endDate": "2026-11-01T21:25:00Z",
+   "last": 51.5,
+   "addedAt": "2026-11-01T05:59:58Z",
+   "status": "live"
+  },
+  {
+   "id": "5170735",
+   "q": "비트코인이 10월에 8만 7,500달러에 도달할까?",
+   "en": "Will Bitcoin reach $87,500 in October?",
+   "cat": "코인",
+   "event": "what-price-will-bitcoin-hit-in-october-2026",
+   "endDate": "2026-11-01T04:00:00Z",
+   "last": 1.3,
+   "addedAt": "2026-10-20T07:22:48Z",
+   "status": "resolved",
+   "outcome": "no",
+   "final": 1.3,
+   "resolvedAt": "2026-11-01T05:59:58Z"
   },
   {
    "id": "6440403",
