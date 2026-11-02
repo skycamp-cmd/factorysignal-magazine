@@ -94,7 +94,7 @@ async function photoCandidates(q) {
     gsrlimit: '30', prop: 'imageinfo', iiprop: 'url|extmetadata|size', iiurlwidth: '960', origin: '*',
   });
   const r = await fetch(`https://commons.wikimedia.org/w/api.php?${params}`, {
-    headers: { 'User-Agent': 'FactoryMagazine/1.0 (https://factorysignal-magazine.vercel.app)' }, signal: AbortSignal.timeout(10000),
+    headers: { 'User-Agent': 'FactoryMagazine/1.0 (https://magazine.kisi1.com)' }, signal: AbortSignal.timeout(10000),
   });
   const pages = Object.values(((await r.json()).query || {}).pages || {}).sort((a, b) => (a.index || 99) - (b.index || 99));
   const out = [];

@@ -356,7 +356,7 @@ py -3 -m unittest discover -p "test_*.py" -v
 
 `main`(또는 `master`)에 push하면 Vercel이 배포한다. 1분 안에 반영된다.
 
-라이브: https://factorysignal-magazine.vercel.app/articles/index.html
+라이브: https://magazine.kisi1.com/articles/index.html
 
 **배포가 안 되면 저장소가 private인지 먼저 확인한다.** 2026-08-03에 이 문제로 몇 시간을
 썼다. push는 정상이었는데 Vercel이 새 배포를 만들지 않았고, 저장소를 public으로

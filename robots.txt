@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin.html
 
-Sitemap: https://factorysignal-magazine.vercel.app/articles/sitemap.xml
+Sitemap: https://magazine.kisi1.com/articles/sitemap.xml

@@ -33,7 +33,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 ARTICLES = os.path.join(ROOT, "articles")
 
-SITE = "https://factorysignal-magazine.vercel.app"
+SITE = "https://magazine.kisi1.com"
 API = "https://api.telegram.org/bot{token}/{method}"
 
 EMOJI = {"정치": "🏛", "경제": "📈", "암호화폐": "₿", "스포츠": "⚽",

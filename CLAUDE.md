@@ -22,7 +22,7 @@ naming convention across all three properties now, not just a one-off style choi
 The footer's "링크" column still legitimately says "Factory Signal" once — that entry links to
 and correctly names the *other* property (the app), leave it alone.
 
-**Since 2026-10-20 the magazine stands alone at `factorysignal-magazine.vercel.app`** (until a
+**Since 2026-10-20 the magazine stands alone at `magazine.kisi1.com`** (until a
 custom domain is bought — then change `SITE_BASE` in `tools/publish.py` and `robots.txt`).
 It deliberately no longer links to the Factory Signal app (no "앱 열기", no app terms/privacy,
 no $SIGNAL footer); it has its own `articles/privacy.html`. The app's old `/blog/*` URLs now
@@ -88,3 +88,10 @@ state — that's expected until someone actually publishes a startup-tagged post
 breakpoint existed). There's now a `@media (min-width: 769px)` override that shows a normal
 inline horizontal nav and hides the hamburger/search icons above that width — don't remove it,
 that was a real bug fix, not a style choice.
+
+## 호스팅 (2026-11-02 이전)
+
+- 저장소: `skycamp-cmd/factorysignal-magazine` (개인 계정 minjh8768-al에서 이전). Vercel: 회사 팀 `skycamp-cmds-projects`의 `factorysignal-magazine` 프로젝트, 운영 브랜치 `main` 에 올리면 자동 배포.
+- 주소: `https://magazine.kisi1.com` (kisi1.com DNS는 같은 Vercel 팀). 예전 `factorysignal-magazine.vercel.app` 은 개인 팀 정지로 쓰지 않는다.
+- 데이터(Upstash)는 그대로, 비밀값은 회사 프로젝트에 새로 넣음 (관리자 비밀번호·세션 키는 새로 만듦, GITHUB_DISPATCH_TOKEN 은 skycamp-cmd 토큰).
+- `deploy.bat` 의 토큰 방식은 예전 개인 팀용 — 이제는 GitHub에 올리면 배포된다.

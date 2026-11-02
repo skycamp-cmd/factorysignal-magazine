@@ -17,7 +17,7 @@ import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ARTICLES = os.path.join(HERE, "..", "articles")
-ORIGIN = "https://factorysignal-magazine.vercel.app"
+ORIGIN = "https://magazine.kisi1.com"
 DEFAULT_IMAGE = ORIGIN + "/images/og.png"
 START, END = "<!-- OG:START -->", "<!-- OG:END -->"
 SITE_NAME = "Factory Magazine"

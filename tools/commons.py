@@ -18,7 +18,7 @@ import urllib.parse
 import urllib.request
 
 API = "https://commons.wikimedia.org/w/api.php"
-UA = "FactoryMagazine/1.0 (https://factorysignal-magazine.vercel.app)"
+UA = "FactoryMagazine/1.0 (https://magazine.kisi1.com)"
 
 # 상업 이용·수정(잘라 보여 주기)이 허락된 라이선스만. NC(비상업)·ND(변경 금지)는 제외.
 _OK = re.compile(r"^(cc0|public domain|pd|cc by(-sa)? [\d.]+( [a-z]{2,3})?|kogl type 1)", re.I)
