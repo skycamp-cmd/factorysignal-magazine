@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
     let counts = [];
     try { counts = shown.length ? await kv(shown.map((m) => ['HGETALL', `poll:pm-${m.id}`])) : []; } catch (e) { /* 독자 수 없이도 보여 준다 */ }
     shown.forEach((m, i) => { const c = hpairs(counts[i]); m.readers = { yes: Number(c.yes) || 0, no: Number(c.no) || 0 }; });
-    res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate=600');
+    res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=900');   // 5분 (2026-11-02 사용량 절감, 60초→300초)
     res.json({ updatedAt: DATA.updatedAt || '', live, resolved });
   } catch (e) {
     res.status(500).json({ error: '예측 질문을 불러오지 못했습니다.' });
