@@ -1,12 +1,13 @@
 # 첫 화면 예측 질문 관리 (2026-10-20). Polymarket에서 지금 가장 뜨거운 질문 10개를 골라
 # 한국어로 옮기고, 끝난 질문의 결과를 기록한다 → data/markets.json.
 # 한국 IP는 Polymarket이 막지만 GitHub 러너(미국)에서는 열린다.
-# 4시간마다. 결과가 나면 그 자리를 다음 뜨거운 질문이 채운다.
+# 하루 1번(06:17 KST). 결과가 나면 그 자리를 다음 뜨거운 질문이 채운다.
+# (2026-11-02 Vercel 사용량 초과로 4시간마다 → 하루 1번. 커밋마다 Vercel 배포가 생기기 때문)
 name: markets
 
 on:
   schedule:
-    - cron: '17 */4 * * *'
+    - cron: '17 21 * * *'
   workflow_dispatch:
     inputs:
       backfill:
