@@ -16,7 +16,7 @@ const crypto = require('crypto');
 const topics = require('./_odds-topics.json');
 const { DATA } = require('./_lib');
 
-const REPO = 'minjh8768-al/factorysignal-magazine';
+const REPO = 'skycamp-cmd/factorysignal-magazine'; // 2026-11-02 회사 계정으로 이전
 const URL_ = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL;
 const TOKEN = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
 const SECRET = process.env.MAGAZINE_ADMIN_SECRET || '';
