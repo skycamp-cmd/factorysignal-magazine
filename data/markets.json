@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-01T20:29:38Z",
+ "updatedAt": "2026-11-03T02:56:32Z",
  "markets": [
   {
    "id": "562830",
@@ -8,7 +8,7 @@
    "cat": "정치·세계",
    "event": "balance-of-power-2026-midterms",
    "endDate": "2026-11-04T04:59:00Z",
-   "last": 23.5,
+   "last": 18.5,
    "addedAt": "2026-10-20T07:22:48Z",
    "status": "live"
   },
@@ -66,7 +66,7 @@
    "event": "military-action-against-saudi-oil-pipeline-east-west-byptptpt",
    "eventTitle": "Military action against Saudi Oil Pipeline (East-West) by...?",
    "endDate": "2026-11-30T20:59:00Z",
-   "last": 35.0,
+   "last": 38.0,
    "addedAt": "2026-10-27T05:01:49Z",
    "status": "live"
   },
@@ -78,7 +78,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 27.5,
+   "last": 25.5,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -90,8 +90,32 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 26.5,
+   "last": 25.5,
    "addedAt": "2026-10-29T05:45:42Z",
+   "status": "live"
+  },
+  {
+   "id": "6507378",
+   "q": "11월에 비트코인이 8만 달러에 도달할까?",
+   "en": "Will Bitcoin reach $80,000 in November?",
+   "cat": "코인",
+   "event": "what-price-will-bitcoin-hit-in-november-2026",
+   "eventTitle": "What price will Bitcoin hit in November?",
+   "endDate": "2026-12-01T05:00:00Z",
+   "last": 68.5,
+   "addedAt": "2026-11-03T02:56:32Z",
+   "status": "live"
+  },
+  {
+   "id": "6501497",
+   "q": "롤드컵 플레이오프: Top Esports가 Invictus Gaming을 이길까?",
+   "en": "Will Top Esports beat Invictus Gaming? (LoL: Top Esports vs Invictus Gaming (BO5) - Worlds Playoffs)",
+   "cat": "스포츠",
+   "event": "lol-tes-ig1-2026-11-06",
+   "eventTitle": "LoL: Top Esports vs Invictus Gaming (BO5) - Worlds Playoffs",
+   "endDate": "2026-11-04T04:00:00Z",
+   "last": 46.5,
+   "addedAt": "2026-11-03T02:56:32Z",
    "status": "live"
   },
   {
@@ -104,7 +128,10 @@
    "endDate": "2026-11-01T21:25:00Z",
    "last": 50.5,
    "addedAt": "2026-11-01T05:59:58Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "no",
+   "final": 50.5,
+   "resolvedAt": "2026-11-03T02:56:32Z"
   },
   {
    "id": "6242648",
@@ -116,7 +143,10 @@
    "endDate": "2026-11-02T02:00:00Z",
    "last": 41.5,
    "addedAt": "2026-11-01T20:29:38Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "no",
+   "final": 41.5,
+   "resolvedAt": "2026-11-03T02:56:32Z"
   },
   {
    "id": "5915704",
