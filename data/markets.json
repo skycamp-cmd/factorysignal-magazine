@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-03T02:56:32Z",
+ "updatedAt": "2026-11-04T01:26:55Z",
  "markets": [
   {
    "id": "562830",
@@ -8,7 +8,7 @@
    "cat": "정치·세계",
    "event": "balance-of-power-2026-midterms",
    "endDate": "2026-11-04T04:59:00Z",
-   "last": 18.5,
+   "last": 1.2,
    "addedAt": "2026-10-20T07:22:48Z",
    "status": "live"
   },
@@ -30,7 +30,7 @@
    "cat": "스포츠",
    "event": "worlds-2026-winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 15.2,
+   "last": 14.8,
    "addedAt": "2026-10-20T07:22:48Z",
    "status": "live"
   },
@@ -66,7 +66,7 @@
    "event": "military-action-against-saudi-oil-pipeline-east-west-byptptpt",
    "eventTitle": "Military action against Saudi Oil Pipeline (East-West) by...?",
    "endDate": "2026-11-30T20:59:00Z",
-   "last": 38.0,
+   "last": 27.0,
    "addedAt": "2026-10-27T05:01:49Z",
    "status": "live"
   },
@@ -78,7 +78,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 25.5,
+   "last": 23.5,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -90,7 +90,7 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 25.5,
+   "last": 21.5,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -114,7 +114,7 @@
    "event": "lol-tes-ig1-2026-11-06",
    "eventTitle": "LoL: Top Esports vs Invictus Gaming (BO5) - Worlds Playoffs",
    "endDate": "2026-11-04T04:00:00Z",
-   "last": 46.5,
+   "last": 20.5,
    "addedAt": "2026-11-03T02:56:32Z",
    "status": "live"
   },
