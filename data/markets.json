@@ -1,17 +1,6 @@
 {
- "updatedAt": "2026-11-04T01:26:55Z",
+ "updatedAt": "2026-11-05T01:29:42Z",
  "markets": [
-  {
-   "id": "562830",
-   "q": "2026년 미 중간선거에서 공화당이 상원, 민주당이 하원을 차지할까?",
-   "en": "2026 Balance of Power: R Senate, D House",
-   "cat": "정치·세계",
-   "event": "balance-of-power-2026-midterms",
-   "endDate": "2026-11-04T04:59:00Z",
-   "last": 1.2,
-   "addedAt": "2026-10-20T07:22:48Z",
-   "status": "live"
-  },
   {
    "id": "682705",
    "q": "베냐민 네타냐후가 차기 이스라엘 총리가 될까?",
@@ -30,20 +19,8 @@
    "cat": "스포츠",
    "event": "worlds-2026-winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 14.8,
+   "last": 13.8,
    "addedAt": "2026-10-20T07:22:48Z",
-   "status": "live"
-  },
-  {
-   "id": "562802",
-   "q": "2026년 중간선거 이후 민주당이 하원을 차지할까?",
-   "en": "Will the Democratic Party control the House after the 2026 Midterm elections?",
-   "cat": "정치·세계",
-   "event": "which-party-will-win-the-house-in-2026",
-   "eventTitle": "Which party will win the House in 2026?",
-   "endDate": "2026-11-04T04:59:00Z",
-   "last": 94.5,
-   "addedAt": "2026-10-20T20:00:05Z",
    "status": "live"
   },
   {
@@ -66,7 +43,7 @@
    "event": "military-action-against-saudi-oil-pipeline-east-west-byptptpt",
    "eventTitle": "Military action against Saudi Oil Pipeline (East-West) by...?",
    "endDate": "2026-11-30T20:59:00Z",
-   "last": 27.0,
+   "last": 29.5,
    "addedAt": "2026-10-27T05:01:49Z",
    "status": "live"
   },
@@ -78,7 +55,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 23.5,
+   "last": 21.5,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -90,9 +67,38 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 21.5,
+   "last": 23.5,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
+  },
+  {
+   "id": "562830",
+   "q": "2026년 미 중간선거에서 공화당이 상원, 민주당이 하원을 차지할까?",
+   "en": "2026 Balance of Power: R Senate, D House",
+   "cat": "정치·세계",
+   "event": "balance-of-power-2026-midterms",
+   "endDate": "2026-11-04T04:59:00Z",
+   "last": 1.2,
+   "addedAt": "2026-10-20T07:22:48Z",
+   "status": "resolved",
+   "outcome": "no",
+   "final": 1.2,
+   "resolvedAt": "2026-11-05T01:29:42Z"
+  },
+  {
+   "id": "562802",
+   "q": "2026년 중간선거 이후 민주당이 하원을 차지할까?",
+   "en": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+   "cat": "정치·세계",
+   "event": "which-party-will-win-the-house-in-2026",
+   "eventTitle": "Which party will win the House in 2026?",
+   "endDate": "2026-11-04T04:59:00Z",
+   "last": 94.5,
+   "addedAt": "2026-10-20T20:00:05Z",
+   "status": "resolved",
+   "outcome": "yes",
+   "final": 94.5,
+   "resolvedAt": "2026-11-05T01:29:42Z"
   },
   {
    "id": "6507378",
@@ -104,7 +110,10 @@
    "endDate": "2026-12-01T05:00:00Z",
    "last": 68.5,
    "addedAt": "2026-11-03T02:56:32Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "yes",
+   "final": 68.5,
+   "resolvedAt": "2026-11-05T01:29:42Z"
   },
   {
    "id": "6501497",
@@ -116,7 +125,10 @@
    "endDate": "2026-11-04T04:00:00Z",
    "last": 20.5,
    "addedAt": "2026-11-03T02:56:32Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "no",
+   "final": 20.5,
+   "resolvedAt": "2026-11-05T01:29:42Z"
   },
   {
    "id": "5603325",
