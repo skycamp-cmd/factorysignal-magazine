@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-06T01:35:50Z",
+ "updatedAt": "2026-11-07T00:57:55Z",
  "markets": [
   {
    "id": "682705",
@@ -19,8 +19,104 @@
    "cat": "스포츠",
    "event": "worlds-2026-winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 25.2,
+   "last": 19.6,
    "addedAt": "2026-10-20T07:22:48Z",
+   "status": "live"
+  },
+  {
+   "id": "5401796",
+   "q": "11월 30일까지 사우디 동서 석유 파이프라인에 대한 군사 행동이 있을까?",
+   "en": "Military action against Saudi Oil Pipeline (East-West) by November 30?",
+   "cat": "경제",
+   "event": "military-action-against-saudi-oil-pipeline-east-west-byptptpt",
+   "eventTitle": "Military action against Saudi Oil Pipeline (East-West) by...?",
+   "endDate": "2026-11-30T20:59:00Z",
+   "last": 21.0,
+   "addedAt": "2026-10-27T05:01:49Z",
+   "status": "live"
+  },
+  {
+   "id": "3215007",
+   "q": "2026년 12월 회의 후 연준이 기준금리를 동결할까?",
+   "en": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+   "cat": "경제",
+   "event": "fed-decision-in-december-20260729232808632",
+   "eventTitle": "Fed Decision in December?",
+   "endDate": "2026-12-09T23:59:00Z",
+   "last": 21.5,
+   "addedAt": "2026-10-29T05:45:42Z",
+   "status": "live"
+  },
+  {
+   "id": "4906128",
+   "q": "미국이 2026년 11월 30일까지 이란 봉쇄 해제를 발표할까?",
+   "en": "US announces end of Iranian blockade by November 30, 2026?",
+   "cat": "경제",
+   "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+   "eventTitle": "US announces end of Iranian blockade by...?",
+   "endDate": "2026-12-01T04:59:00Z",
+   "last": 19.5,
+   "addedAt": "2026-10-29T05:45:42Z",
+   "status": "live"
+  },
+  {
+   "id": "6667467",
+   "q": "미국과 이란의 실질적 휴전이 2026년 11월 8일까지 유지될까?",
+   "en": "US x Iran effective ceasefire continues through November 8, 2026?",
+   "cat": "정치·세계",
+   "event": "us-iran-effective-ceasefire-continues-throughptptpt-20261103",
+   "eventTitle": "US-Iran effective ceasefire continues through...?",
+   "endDate": "2026-11-09T04:59:00Z",
+   "last": 29.8,
+   "addedAt": "2026-11-07T00:57:55Z",
+   "status": "live"
+  },
+  {
+   "id": "3580932",
+   "q": "차기 타이베이 시장 선거에서 장완안이 당선될까?",
+   "en": "Will Chiang Wan-an win the next Taipei Mayor election?",
+   "cat": "정치·세계",
+   "event": "taipei-mayor-election-winner-20260813125857100",
+   "eventTitle": "Taipei Mayor Election Winner",
+   "endDate": "2026-11-29T04:59:00Z",
+   "last": 68.5,
+   "addedAt": "2026-11-07T00:57:55Z",
+   "status": "live"
+  },
+  {
+   "id": "6702336",
+   "q": "롤드컵 플레이오프: 인빅터스 게이밍이 젠지를 이길까?",
+   "en": "Will Invictus Gaming beat Gen.G? (LoL: Invictus Gaming vs Gen.G (BO5) - Worlds Playoffs)",
+   "cat": "스포츠",
+   "event": "lol-ig1-gen-2026-11-07",
+   "eventTitle": "LoL: Invictus Gaming vs Gen.G (BO5) - Worlds Playoffs",
+   "endDate": "2026-11-08T04:00:00Z",
+   "last": 19.5,
+   "addedAt": "2026-11-07T00:57:55Z",
+   "status": "live"
+  },
+  {
+   "id": "6273597",
+   "q": "웨스턴 켄터키가 미들 테네시를 이길까?",
+   "en": "Will Western Kentucky beat Middle Tennessee? (Western Kentucky vs. Middle Tennessee)",
+   "cat": "스포츠",
+   "event": "cfb-wkent-mtnst-2026-11-07",
+   "eventTitle": "Western Kentucky vs. Middle Tennessee",
+   "endDate": "2026-11-07T20:30:00Z",
+   "last": 55.5,
+   "addedAt": "2026-11-07T00:57:55Z",
+   "status": "live"
+  },
+  {
+   "id": "5211896",
+   "q": "피트 헤그세스가 11월 30일까지 국방장관직에서 물러날까?",
+   "en": "Pete Hegseth out as Secretary of Defense by November 30?",
+   "cat": "정치·세계",
+   "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
+   "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
+   "endDate": "2026-12-01T04:59:00Z",
+   "last": 17.5,
+   "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
   {
@@ -33,43 +129,10 @@
    "endDate": "2026-10-31T23:59:00Z",
    "last": 98.9,
    "addedAt": "2026-10-26T04:44:40Z",
-   "status": "live"
-  },
-  {
-   "id": "5401796",
-   "q": "11월 30일까지 사우디 동서 석유 파이프라인에 대한 군사 행동이 있을까?",
-   "en": "Military action against Saudi Oil Pipeline (East-West) by November 30?",
-   "cat": "경제",
-   "event": "military-action-against-saudi-oil-pipeline-east-west-byptptpt",
-   "eventTitle": "Military action against Saudi Oil Pipeline (East-West) by...?",
-   "endDate": "2026-11-30T20:59:00Z",
-   "last": 28.0,
-   "addedAt": "2026-10-27T05:01:49Z",
-   "status": "live"
-  },
-  {
-   "id": "3215007",
-   "q": "2026년 12월 회의 후 연준이 기준금리를 동결할까?",
-   "en": "Will there be no change in Fed interest rates after the December 2026 meeting?",
-   "cat": "경제",
-   "event": "fed-decision-in-december-20260729232808632",
-   "eventTitle": "Fed Decision in December?",
-   "endDate": "2026-12-09T23:59:00Z",
-   "last": 31.5,
-   "addedAt": "2026-10-29T05:45:42Z",
-   "status": "live"
-  },
-  {
-   "id": "4906128",
-   "q": "미국이 2026년 11월 30일까지 이란 봉쇄 해제를 발표할까?",
-   "en": "US announces end of Iranian blockade by November 30, 2026?",
-   "cat": "경제",
-   "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
-   "eventTitle": "US announces end of Iranian blockade by...?",
-   "endDate": "2026-12-01T04:59:00Z",
-   "last": 21.5,
-   "addedAt": "2026-10-29T05:45:42Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "yes",
+   "final": 98.9,
+   "resolvedAt": "2026-11-07T00:57:55Z"
   },
   {
    "id": "562830",
