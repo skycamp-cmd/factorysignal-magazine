@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T00:57:55Z",
+ "updatedAt": "2026-11-08T00:43:10Z",
  "markets": [
   {
    "id": "682705",
@@ -19,7 +19,7 @@
    "cat": "스포츠",
    "event": "worlds-2026-winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 19.6,
+   "last": 21.2,
    "addedAt": "2026-10-20T07:22:48Z",
    "status": "live"
   },
@@ -31,7 +31,7 @@
    "event": "military-action-against-saudi-oil-pipeline-east-west-byptptpt",
    "eventTitle": "Military action against Saudi Oil Pipeline (East-West) by...?",
    "endDate": "2026-11-30T20:59:00Z",
-   "last": 21.0,
+   "last": 36.0,
    "addedAt": "2026-10-27T05:01:49Z",
    "status": "live"
   },
@@ -55,20 +55,8 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 19.5,
+   "last": 18.5,
    "addedAt": "2026-10-29T05:45:42Z",
-   "status": "live"
-  },
-  {
-   "id": "6667467",
-   "q": "미국과 이란의 실질적 휴전이 2026년 11월 8일까지 유지될까?",
-   "en": "US x Iran effective ceasefire continues through November 8, 2026?",
-   "cat": "정치·세계",
-   "event": "us-iran-effective-ceasefire-continues-throughptptpt-20261103",
-   "eventTitle": "US-Iran effective ceasefire continues through...?",
-   "endDate": "2026-11-09T04:59:00Z",
-   "last": 29.8,
-   "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
   {
@@ -79,7 +67,7 @@
    "event": "taipei-mayor-election-winner-20260813125857100",
    "eventTitle": "Taipei Mayor Election Winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 68.5,
+   "last": 67.5,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -96,6 +84,57 @@
    "status": "live"
   },
   {
+   "id": "5211896",
+   "q": "피트 헤그세스가 11월 30일까지 국방장관직에서 물러날까?",
+   "en": "Pete Hegseth out as Secretary of Defense by November 30?",
+   "cat": "정치·세계",
+   "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
+   "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
+   "endDate": "2026-12-01T04:59:00Z",
+   "last": 20.0,
+   "addedAt": "2026-11-07T00:57:55Z",
+   "status": "live"
+  },
+  {
+   "id": "6241992",
+   "q": "2026년 11월 8일 FC 바르셀로나가 아틀레티코 마드리드를 이길까?",
+   "en": "Will FC Barcelona win on 2026-11-08?",
+   "cat": "스포츠",
+   "event": "lal-mad-bar-2026-11-08",
+   "eventTitle": "Club Atlético de Madrid vs. FC Barcelona",
+   "endDate": "2026-11-08T20:00:00Z",
+   "last": 52.5,
+   "addedAt": "2026-11-08T00:43:10Z",
+   "status": "live"
+  },
+  {
+   "id": "6236266",
+   "q": "2026년 11월 8일 리버풀 FC가 크리스탈 팰리스 FC를 이길까?",
+   "en": "Will Liverpool FC win on 2026-11-08?",
+   "cat": "스포츠",
+   "event": "epl-cry-liv-2026-11-08",
+   "eventTitle": "Crystal Palace FC vs. Liverpool FC",
+   "endDate": "2026-11-08T14:00:00Z",
+   "last": 62.5,
+   "addedAt": "2026-11-08T00:43:10Z",
+   "status": "live"
+  },
+  {
+   "id": "6667467",
+   "q": "미국과 이란의 실질적 휴전이 2026년 11월 8일까지 유지될까?",
+   "en": "US x Iran effective ceasefire continues through November 8, 2026?",
+   "cat": "정치·세계",
+   "event": "us-iran-effective-ceasefire-continues-throughptptpt-20261103",
+   "eventTitle": "US-Iran effective ceasefire continues through...?",
+   "endDate": "2026-11-09T04:59:00Z",
+   "last": 29.8,
+   "addedAt": "2026-11-07T00:57:55Z",
+   "status": "resolved",
+   "outcome": "no",
+   "final": 29.8,
+   "resolvedAt": "2026-11-08T00:43:10Z"
+  },
+  {
    "id": "6273597",
    "q": "웨스턴 켄터키가 미들 테네시를 이길까?",
    "en": "Will Western Kentucky beat Middle Tennessee? (Western Kentucky vs. Middle Tennessee)",
@@ -105,19 +144,10 @@
    "endDate": "2026-11-07T20:30:00Z",
    "last": 55.5,
    "addedAt": "2026-11-07T00:57:55Z",
-   "status": "live"
-  },
-  {
-   "id": "5211896",
-   "q": "피트 헤그세스가 11월 30일까지 국방장관직에서 물러날까?",
-   "en": "Pete Hegseth out as Secretary of Defense by November 30?",
-   "cat": "정치·세계",
-   "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
-   "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
-   "endDate": "2026-12-01T04:59:00Z",
-   "last": 17.5,
-   "addedAt": "2026-11-07T00:57:55Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "no",
+   "final": 55.5,
+   "resolvedAt": "2026-11-08T00:43:10Z"
   },
   {
    "id": "4641065",
