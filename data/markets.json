@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T00:43:10Z",
+ "updatedAt": "2026-11-09T00:57:48Z",
  "markets": [
   {
    "id": "682705",
@@ -19,7 +19,7 @@
    "cat": "스포츠",
    "event": "worlds-2026-winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 21.2,
+   "last": 27.6,
    "addedAt": "2026-10-20T07:22:48Z",
    "status": "live"
   },
@@ -31,7 +31,7 @@
    "event": "military-action-against-saudi-oil-pipeline-east-west-byptptpt",
    "eventTitle": "Military action against Saudi Oil Pipeline (East-West) by...?",
    "endDate": "2026-11-30T20:59:00Z",
-   "last": 36.0,
+   "last": 34.0,
    "addedAt": "2026-10-27T05:01:49Z",
    "status": "live"
   },
@@ -43,7 +43,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 21.5,
+   "last": 22.5,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -55,7 +55,7 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 18.5,
+   "last": 15.5,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -67,8 +67,56 @@
    "event": "taipei-mayor-election-winner-20260813125857100",
    "eventTitle": "Taipei Mayor Election Winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 67.5,
+   "last": 66.5,
    "addedAt": "2026-11-07T00:57:55Z",
+   "status": "live"
+  },
+  {
+   "id": "5211896",
+   "q": "피트 헤그세스가 11월 30일까지 국방장관직에서 물러날까?",
+   "en": "Pete Hegseth out as Secretary of Defense by November 30?",
+   "cat": "정치·세계",
+   "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
+   "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
+   "endDate": "2026-12-01T04:59:00Z",
+   "last": 29.5,
+   "addedAt": "2026-11-07T00:57:55Z",
+   "status": "live"
+  },
+  {
+   "id": "5339986",
+   "q": "이스라엘과 이란의 휴전이 11월 15일까지 지속될까?",
+   "en": "Israel x Iran ceasefire continues through November 15?",
+   "cat": "정치·세계",
+   "event": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+   "eventTitle": "Israel x Iran ceasefire continues through...?",
+   "endDate": "2026-11-16T04:59:00Z",
+   "last": 90.5,
+   "addedAt": "2026-11-09T00:57:48Z",
+   "status": "live"
+  },
+  {
+   "id": "6507381",
+   "q": "비트코인이 11월에 7만 2,500달러까지 떨어질까?",
+   "en": "Will Bitcoin dip to $72,500 in November?",
+   "cat": "코인",
+   "event": "what-price-will-bitcoin-hit-in-november-2026",
+   "eventTitle": "What price will Bitcoin hit in November?",
+   "endDate": "2026-12-01T05:00:00Z",
+   "last": 66.5,
+   "addedAt": "2026-11-09T00:57:48Z",
+   "status": "live"
+  },
+  {
+   "id": "6496387",
+   "q": "UFC 334: 조시 호킷이 시릴 간을 이길까?",
+   "en": "Will Josh Hokit beat Ciryl Gane? (UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card))",
+   "cat": "스포츠",
+   "event": "ufc-jos52-cir-2026-11-14",
+   "eventTitle": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
+   "endDate": "2026-11-15T04:59:59Z",
+   "last": 33.5,
+   "addedAt": "2026-11-09T00:57:48Z",
    "status": "live"
   },
   {
@@ -81,19 +129,10 @@
    "endDate": "2026-11-08T04:00:00Z",
    "last": 19.5,
    "addedAt": "2026-11-07T00:57:55Z",
-   "status": "live"
-  },
-  {
-   "id": "5211896",
-   "q": "피트 헤그세스가 11월 30일까지 국방장관직에서 물러날까?",
-   "en": "Pete Hegseth out as Secretary of Defense by November 30?",
-   "cat": "정치·세계",
-   "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
-   "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
-   "endDate": "2026-12-01T04:59:00Z",
-   "last": 20.0,
-   "addedAt": "2026-11-07T00:57:55Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "no",
+   "final": 19.5,
+   "resolvedAt": "2026-11-09T00:57:48Z"
   },
   {
    "id": "6241992",
@@ -105,7 +144,10 @@
    "endDate": "2026-11-08T20:00:00Z",
    "last": 52.5,
    "addedAt": "2026-11-08T00:43:10Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "yes",
+   "final": 52.5,
+   "resolvedAt": "2026-11-09T00:57:48Z"
   },
   {
    "id": "6236266",
@@ -117,7 +159,10 @@
    "endDate": "2026-11-08T14:00:00Z",
    "last": 62.5,
    "addedAt": "2026-11-08T00:43:10Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "yes",
+   "final": 62.5,
+   "resolvedAt": "2026-11-09T00:57:48Z"
   },
   {
    "id": "6667467",
