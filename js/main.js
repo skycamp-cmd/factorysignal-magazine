@@ -193,7 +193,9 @@ function mountArticles(markets) {
   catTabs(document.getElementById("tabs-articles"), cards.map((c) => c.dataset.cat), (cat) => {
     let n = 0;
     cards.forEach((c) => {
-      const show = (cat === "전체" || c.dataset.cat === cat) && n < (document.getElementById("pm-live") ? 12 : Infinity);
+      // 첫 화면 기사: PC 12개, 폰 6개 (2026-11-13 폰 화면이 너무 길어서)
+      const cap = document.getElementById("pm-live") ? (isPhone() ? 6 : 12) : Infinity;
+      const show = (cat === "전체" || c.dataset.cat === cat) && n < cap;
       if (show) n++;
       c.hidden = !show;
     });
@@ -209,6 +211,24 @@ function mountArticles(markets) {
       ? `결과 ${choiceKo(m.outcome)} · 마감 전 ${pct(m.final)}`
       : `진행 중 · 시장 ${pct(m.market)}`;
   });
+}
+
+function isPhone() { return window.matchMedia("(max-width: 760px)").matches; }
+
+// 폰에서 진행 중 질문은 처음 n개만 보여 주고 '더 보기'로 펼친다 (2026-11-13). 접기는 CSS가 폰에서만 적용.
+function foldList(el, n) {
+  const next = el.nextElementSibling;
+  if (next && next.classList.contains("pm-fold")) next.remove();
+  el.classList.remove("is-folded");
+  const extra = el.querySelectorAll(":scope > .pm-card").length - n;
+  if (extra <= 0) return;
+  el.classList.add("is-folded");
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "pm-fold";
+  btn.textContent = `질문 ${extra}개 더 보기`;
+  btn.addEventListener("click", () => { el.classList.remove("is-folded"); btn.remove(); });
+  el.after(btn);
 }
 
 function marketLinks() {
@@ -246,6 +266,7 @@ async function mountMarkets() {
       if ((cat === "전체" || list[i].cat === cat) && el.children.length < limit) el.append(node);
     });
     if (!el.children.length) el.innerHTML = `<p class="odds-empty">${cat === RQ_CAT ? "아직 공개된 독자 질문이 없어요. 첫 질문을 제안해 보세요!" : empty}</p>`;
+    if (el === liveEl) foldList(el, 5);
     // 독자 질문 탭: 맨 위에 '질문 제안하기' 띠
     const band = document.getElementById("rq-band");
     if (band) band.hidden = cat !== RQ_CAT || el !== liveEl;

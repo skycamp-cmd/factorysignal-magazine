@@ -2110,3 +2110,49 @@ footer {
   .brief-band h1 { font-size: 1.35rem; }
   .brief-lead { font-size: 0.88rem; margin-bottom: 14px; }
 }
+
+/* ── 2026-11-13: 폰 첫 화면 촘촘하게 (세로 길이 줄이기). PC는 그대로 ─────────── */
+.pm-fold { display: none; }
+@media (max-width: 760px) {
+  /* 소개 배너: 설명 문장 빼고 낮게 */
+  .brief-band { padding: 18px 18px 16px; }
+  .brief-band h1 { font-size: 1.15rem; margin-bottom: 10px; }
+  .brief-lead { display: none; }
+  .brief-cta { padding: 8px 14px; font-size: 0.85rem; }
+  .pm-section { padding-top: 14px; padding-bottom: 14px; }
+  .pm-head { margin-bottom: 10px; }
+  .pm-head .pm-sub { display: none; }
+
+  /* 진행 중 질문: 작은 카드 */
+  .pm-grid { gap: 8px; }
+  .pm-card { padding: 11px 13px 10px; gap: 8px; }
+  .pm-main { gap: 10px; }
+  .pm-meta { margin-bottom: 3px; }
+  .pm-q { font-size: 0.92rem; line-height: 1.4; }
+  .pm-g { width: 58px; }
+  .pm-gauge { width: 58px; height: 36px; }
+  .pm-foot .pm-actions { min-height: 30px; }
+  .pm-foot .pm-actions button { padding: 5px 0; font-size: 0.8rem; }
+  /* 처음 5개만, 나머지는 '더 보기' */
+  .pm-grid.is-folded > .pm-card:nth-child(n+6) { display: none; }
+  .pm-fold { display: block; width: 100%; margin-top: 8px; padding: 10px; border: 1px solid var(--gray-200); border-radius: 12px; background: var(--white); font-size: 0.88rem; font-weight: 700; color: var(--accent); cursor: pointer; }
+
+  /* 결과가 나온 예측: 옆으로 넘기는 가로 슬라이드 */
+  .pm-rgrid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; gap: 10px; margin-left: calc(-1 * var(--pad)); margin-right: calc(-1 * var(--pad)); padding: 0 var(--pad) 4px; }
+  .pm-rgrid::-webkit-scrollbar { display: none; }
+  .pm-rgrid > .pm-rcard { flex: 0 0 78%; scroll-snap-align: start; padding: 12px 14px; }
+  .pm-rgrid > .odds-empty { flex: 1 0 100%; }
+  .pm-all { margin-top: 10px; padding: 10px; font-size: 0.85rem; }
+
+  /* 기사: 왼쪽 작은 사진 + 오른쪽 제목 (목록형) */
+  .mk-grid { gap: 0; border-top: 1px solid var(--gray-200); }
+  .mk-art { flex-direction: row; align-items: center; gap: 12px; border: none; border-bottom: 1px solid var(--gray-200); border-radius: 0; padding: 12px 0; background: none; }
+  .mk-art .article-thumb { flex: 0 0 96px; width: 96px; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; }
+  .mk-art .thumb-cat { display: none; }
+  /* 사진 출처(CC 라이선스 표시)는 숨기지 않고 작게 */
+  .mk-art .thumb-credit { font-size: 8px; padding: 1px 4px; left: 0; right: 0; bottom: 0; max-width: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .mk-art-body { padding: 0; gap: 3px; min-width: 0; }
+  .mk-art h4 { font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .mk-art .home-meta { font-size: 0.72rem; }
+  .mk-chip { font-size: 0.68rem; padding: 2px 7px; }
+}
