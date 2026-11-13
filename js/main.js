@@ -479,7 +479,7 @@ async function mountRankStrip(me) {
     ? top.map((x, i) => `<div class="rs-slot${x.me ? " is-me" : ""}"><span class="rs-medal">${medal[i] || `${x.rank}위`}</span><b>${esc(x.nick)}</b><em>${x.score}점</em></div>`).join("")
     : [0, 1, 2].map((i) => `<div class="rs-slot is-empty"><span class="rs-medal">${medal[i]}</span><b>비어 있어요</b><em>첫 주인공은?</em></div>`).join("");
   const mine = r.me ? `내 순위 <b>${r.me.rank}위 · ${r.me.score}점</b>` : (me && me.user ? "아직 이번 주 결과가 나온 내 예측이 없어요" : "로그인하고 예측하면 랭킹에 올라가요");
-  box.innerHTML = `<div class="rs-head"><div><strong>🏆 이번 주 예측 랭킹${r.sample ? ' <span class="rk-sample">예시</span>' : ""}</strong><span>시장이 낮게 본 결과를 맞힐수록 점수가 커요</span></div><a href="ranking.html">전체 랭킹 →</a></div>
+  box.innerHTML = `<div class="rs-head"><div><strong>🏆 이번 주 예측 랭킹</strong><span>시장이 낮게 본 결과를 맞힐수록 점수가 커요</span></div><a href="ranking.html">전체 랭킹 →</a></div>
     <div class="rs-slots">${slots}</div><p class="rs-mine">${mine}</p>`;
 }
 
