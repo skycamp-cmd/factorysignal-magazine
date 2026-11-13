@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T02:17:52Z",
+ "updatedAt": "2026-11-13T02:06:05Z",
  "markets": [
   {
    "id": "682705",
@@ -19,7 +19,7 @@
    "cat": "스포츠",
    "event": "worlds-2026-winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 37.8,
+   "last": 37.4,
    "addedAt": "2026-10-20T07:22:48Z",
    "status": "live"
   },
@@ -31,7 +31,7 @@
    "event": "military-action-against-saudi-oil-pipeline-east-west-byptptpt",
    "eventTitle": "Military action against Saudi Oil Pipeline (East-West) by...?",
    "endDate": "2026-11-30T20:59:00Z",
-   "last": 88.0,
+   "last": 90.5,
    "addedAt": "2026-10-27T05:01:49Z",
    "status": "live"
   },
@@ -43,7 +43,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 3.0,
+   "last": 1.8,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -55,7 +55,7 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 10.5,
+   "last": 7.5,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -79,7 +79,7 @@
    "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
    "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 5.1,
+   "last": 5.0,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -91,8 +91,32 @@
    "event": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
    "eventTitle": "Israel x Iran ceasefire continues through...?",
    "endDate": "2026-11-16T04:59:00Z",
-   "last": 97.1,
+   "last": 95.3,
    "addedAt": "2026-11-09T00:57:48Z",
+   "status": "live"
+  },
+  {
+   "id": "6496387",
+   "q": "UFC 334: 조시 호킷이 시릴 간을 이길까?",
+   "en": "Will Josh Hokit beat Ciryl Gane? (UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card))",
+   "cat": "스포츠",
+   "event": "ufc-jos52-cir-2026-11-14",
+   "eventTitle": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
+   "endDate": "2026-11-15T04:59:59Z",
+   "last": 34.5,
+   "addedAt": "2026-11-09T00:57:48Z",
+   "status": "live"
+  },
+  {
+   "id": "6507382",
+   "q": "비트코인이 11월에 7만 달러까지 떨어질까?",
+   "en": "Will Bitcoin dip to $70,000 in November?",
+   "cat": "코인",
+   "event": "what-price-will-bitcoin-hit-in-november-2026",
+   "eventTitle": "What price will Bitcoin hit in November?",
+   "endDate": "2026-12-01T05:00:00Z",
+   "last": 84.5,
+   "addedAt": "2026-11-13T02:06:05Z",
    "status": "live"
   },
   {
@@ -105,19 +129,10 @@
    "endDate": "2026-12-01T05:00:00Z",
    "last": 79.5,
    "addedAt": "2026-11-09T00:57:48Z",
-   "status": "live"
-  },
-  {
-   "id": "6496387",
-   "q": "UFC 334: 조시 호킷이 시릴 간을 이길까?",
-   "en": "Will Josh Hokit beat Ciryl Gane? (UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card))",
-   "cat": "스포츠",
-   "event": "ufc-jos52-cir-2026-11-14",
-   "eventTitle": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
-   "endDate": "2026-11-15T04:59:59Z",
-   "last": 36.5,
-   "addedAt": "2026-11-09T00:57:48Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "yes",
+   "final": 79.5,
+   "resolvedAt": "2026-11-13T02:06:05Z"
   },
   {
    "id": "6702336",
