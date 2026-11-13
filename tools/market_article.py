@@ -34,7 +34,7 @@ DATA = os.path.join(HERE, "..", "data")
 DRAFTS = os.path.join(HERE, "..", "_drafts")
 ARTICLES = os.path.join(HERE, "..", "articles")
 DRAFTED = os.path.join(DATA, "drafted.json")
-MAX_PER_RUN = 4
+MAX_PER_RUN = 1   # 2026-11-13 하루 한 편으로 (예전 4)
 RESULT_WITHIN_DAYS = 10
 
 # 예측 분야 → 기사 분류(article.CATEGORIES). 첫 화면은 article.OLD_TO_MKT 로 다시 묶어 보여 준다.

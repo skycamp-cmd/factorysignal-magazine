@@ -1,12 +1,12 @@
 # 예측 기사 초안 (2026-10-21). 첫 화면 예측 질문마다 '예측 기사'(진행 중)와 '결과 기사'(결과 남)를
 # AI가 쓰고, 초안은 결과물(drafts-<실행번호>)로 남긴다. 발행은 관리자 페이지 '승인 대기'에서
 # 사람이 확인한 뒤에만 한다 (api/admin.js가 이 결과물을 가져간다).
-# 하루 세 번, 한 번에 최대 4편 (Gemini 무료 한도 하루 20회 안에서).
+# 하루 한 번(07:30 KST, 질문 갱신 06:17 뒤), 한 편만 (2026-11-13 사용자 결정 — 예전엔 하루 3번 최대 4편).
 name: articles
 
 on:
   schedule:
-    - cron: '30 0,5,10 * * *'     # 09:30 · 14:30 · 19:30 KST
+    - cron: '30 22 * * *'     # 07:30 KST
   workflow_dispatch:
 
 concurrency:
@@ -53,8 +53,7 @@ jobs:
           git add data/drafted.json
           git commit -q -m "chore(articles): 예측 기사 초안 기록 $(date +%Y-%m-%dT%H:%M)"
           git pull --rebase origin ${{ github.ref_name }}
-          git push origin HEAD:master
-          git push origin HEAD:main
+          git push --atomic origin HEAD:master HEAD:main   # 한쪽만 올라가 어긋나는 일 방지
 
       - name: 초안 보관 (관리자 페이지 승인 대기로 들어감)
         if: always()
