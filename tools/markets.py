@@ -27,6 +27,7 @@ import datetime
 import json
 import os
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -68,9 +69,19 @@ def _get(path, **params):
     proxy = os.environ.get("PM_PROXY")
     if proxy:   # 로컬 시험용: 프록시는 url= 뒤 나머지 쿼리를 그대로 넘긴다
         url = proxy + f"{GAMMA}{path}" + (("&" + urllib.parse.urlencode(params)) if params else "")
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode("utf-8"))
+    try:
+        req = urllib.request.Request(url, headers=UA)
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        # 2026-11-10부터 GitHub 서버에서 보내는 목록(/events) 요청이 406으로 거부된다.
+        # 그럴 때는 SIGNALVIP 서버(Vercel)를 거쳐 받는다. raw=1 은 필드를 자르지 않은 원본.
+        fb = os.environ.get("PM_PROXY_FALLBACK")
+        if proxy or not fb or e.code not in (403, 406, 429):
+            raise
+        url = fb + f"{GAMMA}{path}" + (("&" + urllib.parse.urlencode(params)) if params else "")
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+            return json.loads(r.read().decode("utf-8"))
 
 
 def _jl(s, default=None):
