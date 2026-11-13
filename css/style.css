@@ -2120,6 +2120,7 @@ footer {
   .brief-lead { display: none; }
   .brief-cta { padding: 8px 14px; font-size: 0.85rem; }
   .pm-section { padding-top: 14px; padding-bottom: 14px; }
+  .page-grid { gap: 10px; }   /* 로그인 카드와 랭킹 사이 빈칸 줄이기 */
   .pm-head { margin-bottom: 10px; }
   .pm-head .pm-sub { display: none; }
 
