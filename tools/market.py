@@ -12,7 +12,7 @@ YAHOO = ("https://query1.finance.yahoo.com/v8/finance/chart/"
          "{symbol}?range={rng}&interval=1d")
 COINGECKO = ("https://api.coingecko.com/api/v3/coins/{cid}/market_chart"
              "?vs_currency=krw&days={days}&interval=daily")
-UA = {"User-Agent": "Mozilla/5.0"}
+UA = {"User-Agent": "FactoryMagazine/1.0 (+https://magazine.kisi1.com)", "Accept": "application/json"}
 
 
 def _get(url, timeout=25):

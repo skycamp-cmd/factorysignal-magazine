@@ -35,7 +35,7 @@ import gemini
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "data", "markets.json")
 GAMMA = "https://gamma-api.polymarket.com"
-UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+UA = {"User-Agent": "FactoryMagazine/1.0 (+https://magazine.kisi1.com)", "Accept": "application/json"}  # 2026-11-10부터 "Mozilla/5.0" 만 보내면 406 거부
 
 LIVE_MAX = 10                 # 동시에 보여 줄 진행 중 질문 수
 CAT_MAX = 4                   # 그중 한 분야 최대
