@@ -328,7 +328,6 @@ async function mountSidebar(data, me) {
   if (document.getElementById("rank-strip")) sb.querySelector(".sb-rank").remove();
   else getJSON(`${apiUrl("me")}?view=rank&period=week`, { credentials: "same-origin" }).then((r) => {
     const medal = ["🥇", "🥈", "🥉"];
-    if (r.sample) sb.querySelector(".sb-rank .sb-title span").insertAdjacentHTML("beforeend", ' <span class="rk-sample">예시</span>');
     document.getElementById("sb-r").innerHTML = (r.rows.length
       ? r.rows.slice(0, 3).map((x, i) => `<div class="sb-row"><span>${medal[i] || x.rank} ${esc(x.nick)}</span><b>${x.score}점</b></div>`).join("")
       : '<p class="sb-note">이번 주 첫 결과가 나오면 순위가 생겨요.</p>')
@@ -534,7 +533,7 @@ async function mountRanking() {
     try {
       const r = await getJSON(`${apiUrl("me")}?view=rank&period=${period}`, { credentials: "same-origin" });
       const medal = { 1: "🥇", 2: "🥈", 3: "🥉" };
-      const note = r.sample ? '<p class="rk-sample-note"><span class="rk-sample">예시</span> 아직 이 기간의 실제 기록이 없어 예시 순위를 보여 드려요. 실제 기록이 생기면 바로 바뀌어요.</p>' : "";
+      const note = "";   // 2026-11-13 '예시' 안내 문구는 빼기로 함 (사용자 요청)
       box.innerHTML = r.rows.length ? note + `<table class="rk-table"><tr class="rk-headrow"><td>순위</td><td>닉네임</td><td class="num">점수</td><td class="num">적중/결과</td></tr>
         ${r.rows.slice(0, 30).map((x) => `<tr class="${x.me ? "is-me" : ""}"><td class="rk-n">${medal[x.rank] || x.rank}</td><td><b>${esc(x.nick)}</b>${x.best >= 60 ? `<span class="rk-tag">${x.best}점짜리 이변 적중</span>` : ""}</td><td class="num"><b>${x.score}</b>점</td><td class="num">${x.wins}/${x.count}</td></tr>`).join("")}</table>
         ${r.me && !r.rows.some((x) => x.me) ? `<p class="rk-me">내 순위 ${r.me.rank}위 · ${r.me.score}점</p>` : ""}`
