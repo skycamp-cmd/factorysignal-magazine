@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-14T01:28:21Z",
+ "updatedAt": "2026-11-15T01:05:32Z",
  "markets": [
   {
    "id": "682705",
@@ -31,7 +31,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 2.6,
+   "last": 3.6,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -55,7 +55,7 @@
    "event": "taipei-mayor-election-winner-20260813125857100",
    "eventTitle": "Taipei Mayor Election Winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 65.5,
+   "last": 64.5,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -67,7 +67,7 @@
    "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
    "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 5.4,
+   "last": 5.6,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -79,7 +79,7 @@
    "event": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
    "eventTitle": "Israel x Iran ceasefire continues through...?",
    "endDate": "2026-11-16T04:59:00Z",
-   "last": 97.4,
+   "last": 98.6,
    "addedAt": "2026-11-09T00:57:48Z",
    "status": "live"
   },
@@ -108,6 +108,18 @@
    "status": "live"
   },
   {
+   "id": "6891215",
+   "q": "11월 9일~15일 사이 비트코인이 6만 2,000달러까지 하락할까?",
+   "en": "Will Bitcoin dip to $62,000 November 9-15?",
+   "cat": "코인",
+   "event": "what-price-will-bitcoin-hit-november-9-15-2026",
+   "eventTitle": "What price will Bitcoin hit November 9-15?",
+   "endDate": "2026-11-16T05:00:00Z",
+   "last": 63.6,
+   "addedAt": "2026-11-15T01:05:32Z",
+   "status": "live"
+  },
+  {
    "id": "6507383",
    "q": "11월에 비트코인이 6만 7,500달러까지 하락할까?",
    "en": "Will Bitcoin dip to $67,500 in November?",
@@ -117,7 +129,10 @@
    "endDate": "2026-12-01T05:00:00Z",
    "last": 84.5,
    "addedAt": "2026-11-14T01:28:21Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "yes",
+   "final": 84.5,
+   "resolvedAt": "2026-11-15T01:05:32Z"
   },
   {
    "id": "5401796",
