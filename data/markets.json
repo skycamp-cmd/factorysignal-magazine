@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-15T01:05:32Z",
+ "updatedAt": "2026-11-16T01:05:21Z",
  "markets": [
   {
    "id": "682705",
@@ -9,17 +9,6 @@
    "event": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
    "endDate": "2026-10-28T03:59:00Z",
    "last": 30.5,
-   "addedAt": "2026-10-20T07:22:48Z",
-   "status": "live"
-  },
-  {
-   "id": "4397033",
-   "q": "빌리빌리 게이밍이 2026 롤드컵에서 우승할까?",
-   "en": "Will Bilibili Gaming win Worlds 2026?",
-   "cat": "스포츠",
-   "event": "worlds-2026-winner",
-   "endDate": "2026-11-29T04:59:00Z",
-   "last": 37.8,
    "addedAt": "2026-10-20T07:22:48Z",
    "status": "live"
   },
@@ -55,7 +44,7 @@
    "event": "taipei-mayor-election-winner-20260813125857100",
    "eventTitle": "Taipei Mayor Election Winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 64.5,
+   "last": 62.5,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -67,7 +56,7 @@
    "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
    "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 5.6,
+   "last": 4.8,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -80,18 +69,6 @@
    "eventTitle": "Israel x Iran ceasefire continues through...?",
    "endDate": "2026-11-16T04:59:00Z",
    "last": 98.6,
-   "addedAt": "2026-11-09T00:57:48Z",
-   "status": "live"
-  },
-  {
-   "id": "6496387",
-   "q": "UFC 334: 조시 호킷이 시릴 간을 이길까?",
-   "en": "Will Josh Hokit beat Ciryl Gane? (UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card))",
-   "cat": "스포츠",
-   "event": "ufc-jos52-cir-2026-11-14",
-   "eventTitle": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
-   "endDate": "2026-11-15T04:59:59Z",
-   "last": 33.5,
    "addedAt": "2026-11-09T00:57:48Z",
    "status": "live"
   },
@@ -115,9 +92,50 @@
    "event": "what-price-will-bitcoin-hit-november-9-15-2026",
    "eventTitle": "What price will Bitcoin hit November 9-15?",
    "endDate": "2026-11-16T05:00:00Z",
-   "last": 63.6,
+   "last": 2.2,
    "addedAt": "2026-11-15T01:05:32Z",
    "status": "live"
+  },
+  {
+   "id": "6967620",
+   "q": "11월 18일에 비트코인 가격이 6만 4천 달러 이상일까?",
+   "en": "Will the price of Bitcoin be above $64,000 on November 18?",
+   "cat": "코인",
+   "event": "bitcoin-above-on-november-18-2026",
+   "eventTitle": "Bitcoin above ___ on November 18?",
+   "endDate": "2026-11-18T17:00:00Z",
+   "last": 62.0,
+   "addedAt": "2026-11-16T01:05:21Z",
+   "status": "live"
+  },
+  {
+   "id": "4397033",
+   "q": "빌리빌리 게이밍이 2026 롤드컵에서 우승할까?",
+   "en": "Will Bilibili Gaming win Worlds 2026?",
+   "cat": "스포츠",
+   "event": "worlds-2026-winner",
+   "endDate": "2026-11-29T04:59:00Z",
+   "last": 37.8,
+   "addedAt": "2026-10-20T07:22:48Z",
+   "status": "resolved",
+   "outcome": "yes",
+   "final": 37.8,
+   "resolvedAt": "2026-11-16T01:05:21Z"
+  },
+  {
+   "id": "6496387",
+   "q": "UFC 334: 조시 호킷이 시릴 간을 이길까?",
+   "en": "Will Josh Hokit beat Ciryl Gane? (UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card))",
+   "cat": "스포츠",
+   "event": "ufc-jos52-cir-2026-11-14",
+   "eventTitle": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
+   "endDate": "2026-11-15T04:59:59Z",
+   "last": 33.5,
+   "addedAt": "2026-11-09T00:57:48Z",
+   "status": "resolved",
+   "outcome": "no",
+   "final": 33.5,
+   "resolvedAt": "2026-11-16T01:05:21Z"
   },
   {
    "id": "6507383",
