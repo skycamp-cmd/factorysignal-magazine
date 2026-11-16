@@ -130,8 +130,13 @@ module.exports = async (req, res) => {
         const rows = await ranking(period);
         const mine = uid ? rows.find((r) => r.uid === uid) : null;
         const pub = (r) => ({ rank: r.rank, nick: r.nick, score: r.score, wins: r.wins, count: r.count, best: r.best, me: r.uid === uid });
-        if (!rows.length) return res.json({ period, rows: sampleRows(period), me: null, players: 0, sample: true });
-        return res.json({ period, rows: rows.slice(0, 30).map(pub), me: mine ? pub(mine) : null, players: rows.length });
+        // 2026-11-16 사용자 결정: 실제 참여자가 적어도 예시 이름으로 30명까지 채운다(점수순으로 섞어 순위를 다시 매김).
+        const real = rows.slice(0, 30).map(pub);
+        const all = [...real, ...sampleRows(period).slice(0, Math.max(0, 30 - real.length))]
+          .sort((a, b) => b.score - a.score)
+          .map((r, i) => ({ ...r, rank: i + 1 }));
+        const meRow = mine ? all.find((r) => r.me) || pub(mine) : null;
+        return res.json({ period, rows: all, me: meRow, players: all.length });
       }
       if (!uid) return res.json({ user: null, stats: stats([]), preds: [] });
       return res.json(await profile(uid));
