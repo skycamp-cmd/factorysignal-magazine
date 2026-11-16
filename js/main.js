@@ -406,7 +406,7 @@ function liveCard(m, my, arts = []) {
       refreshSidebar();
     } catch (e) {
       actions.querySelectorAll("button").forEach((x) => (x.disabled = false));
-      if (e.status === 401) return showLogin(actions);
+      if (e.status === 401) return showLogin();
       const err = document.createElement("span");
       err.className = "pm-readers";
       err.textContent = e.message;
@@ -416,22 +416,34 @@ function liveCard(m, my, arts = []) {
   return el;
 }
 
-// 로그인해야 예측할 수 있다 (2026-10-20). 로그인하고 나면 첫 화면으로 돌아온다.
+// 로그인해야 예측할 수 있다 (2026-10-20). 로그인하고 나면 보던 화면으로 돌아온다.
+// 2026-11-16 사용자 요청: 카드 옆에 안내를 끼워 넣지 않고(누를 때마다 쌓이던 버그도 있었다) 가운데 팝업 하나로.
 let authStatus = null;
-async function showLogin(actions) {
-  // 로그인 안내는 버튼 줄 '옆'에 붙으므로 actions 안을 찾으면 늘 없다 → 누를 때마다 쌓이던 버그 (2026-11-16).
-  // 표시를 먼저 달아 두어, 상태 조회를 기다리는 동안 또 눌러도 한 번만 뜨게 한다.
-  if (actions.dataset.login) return;
-  actions.dataset.login = "1";
+let loginOpening = false;
+async function showLogin() {
+  if (loginOpening || document.querySelector(".lg-mask")) return;
+  loginOpening = true;
   authStatus = authStatus || (await getJSON(`${apiUrl("auth")}?status=1`).catch(() => ({})));
+  loginOpening = false;
   const next = encodeURIComponent(location.pathname.replace(/^\/blog/, ""));
   const btn = (p, label) => authStatus[p]
     ? `<a class="pf-btn pf-${p}" href="${apiUrl("auth")}?start=${p}&next=${next}">${label}</a>`
     : `<span class="pf-btn pf-${p} is-off">${label} (준비 중)</span>`;
-  const box = document.createElement("div");
-  box.className = "pm-login";
-  box.innerHTML = `<p>로그인하면 예측하고, 적중 기록을 모을 수 있어요.</p><div class="pf-login">${btn("kakao", "카카오로 로그인")}${btn("google", "Google로 로그인")}</div>`;
-  actions.after(box);
+  const mask = document.createElement("div");
+  mask.className = "lg-mask";
+  mask.innerHTML = `<div class="lg-box" role="dialog" aria-modal="true" aria-labelledby="lg-t">
+    <button type="button" class="lg-x" aria-label="닫기">×</button>
+    <div class="lg-ico">🔮</div>
+    <strong id="lg-t">로그인하고 예측해 보세요</strong>
+    <p>예측을 남기고, 적중률과 랭킹을 모을 수 있어요.<br>돈이나 포인트는 들지 않아요.</p>
+    <div class="lg-btns">${btn("kakao", "카카오로 시작하기")}${btn("google", "Google로 시작하기")}</div>
+  </div>`;
+  const close = () => { mask.remove(); document.removeEventListener("keydown", onKey); };
+  const onKey = (e) => { if (e.key === "Escape") close(); };
+  mask.addEventListener("click", (e) => { if (e.target === mask || e.target.closest(".lg-x")) close(); });
+  document.addEventListener("keydown", onKey);
+  document.body.append(mask);
+  mask.querySelector(".lg-btns a, .lg-x").focus();
 }
 
 // 결과 카드. 시장이 50% 미만으로 본 쪽이 실제로 일어났으면 '이변' 표시.
@@ -505,7 +517,7 @@ function mountProposeBand(liveEl, me) {
   liveEl.before(band);
   const form = band.querySelector("form");
   band.querySelector(".rq-open").onclick = () => {
-    if (!(me && me.user)) return showLogin(band.querySelector(".rq-head"));
+    if (!(me && me.user)) return showLogin();
     form.hidden = !form.hidden;
   };
   form.onsubmit = async (e) => {
