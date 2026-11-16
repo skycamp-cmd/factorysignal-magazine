@@ -419,7 +419,10 @@ function liveCard(m, my, arts = []) {
 // 로그인해야 예측할 수 있다 (2026-10-20). 로그인하고 나면 첫 화면으로 돌아온다.
 let authStatus = null;
 async function showLogin(actions) {
-  if (actions.querySelector(".pm-login")) return;
+  // 로그인 안내는 버튼 줄 '옆'에 붙으므로 actions 안을 찾으면 늘 없다 → 누를 때마다 쌓이던 버그 (2026-11-16).
+  // 표시를 먼저 달아 두어, 상태 조회를 기다리는 동안 또 눌러도 한 번만 뜨게 한다.
+  if (actions.dataset.login) return;
+  actions.dataset.login = "1";
   authStatus = authStatus || (await getJSON(`${apiUrl("auth")}?status=1`).catch(() => ({})));
   const next = encodeURIComponent(location.pathname.replace(/^\/blog/, ""));
   const btn = (p, label) => authStatus[p]
