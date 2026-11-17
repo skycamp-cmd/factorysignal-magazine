@@ -3,7 +3,7 @@
 
 모든 페이지 <head>에 <!-- OG:START --> ... <!-- OG:END --> 묶음을 넣거나 갱신한다.
   - 기사: 제목·요약·카드 사진(fs:photo, 없으면 대표 이미지)
-  - 그 밖의 페이지: 페이지 제목·설명 + 대표 이미지(images/og.png)
+  - 그 밖의 페이지: 페이지 제목·설명 + 대표 이미지(images/og-delphi.png)
 publish.py가 발행·인덱스 재생성 때마다 부른다. 처음 한 번은 전체에 돌린다:
 
     py -3 og.py          articles/*.html 전체 갱신
@@ -18,7 +18,7 @@ import re
 HERE = os.path.dirname(os.path.abspath(__file__))
 ARTICLES = os.path.join(HERE, "..", "articles")
 ORIGIN = "https://magazine.kisi1.com"
-DEFAULT_IMAGE = ORIGIN + "/images/og.png"
+DEFAULT_IMAGE = ORIGIN + "/images/og-delphi.png"
 START, END = "<!-- OG:START -->", "<!-- OG:END -->"
 SITE_NAME = "Delphi Magazine"
 
