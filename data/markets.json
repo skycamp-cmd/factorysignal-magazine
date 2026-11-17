@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T01:05:21Z",
+ "updatedAt": "2026-11-17T03:56:39Z",
  "markets": [
   {
    "id": "682705",
@@ -20,7 +20,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 3.6,
+   "last": 3.1,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -32,7 +32,7 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 6.5,
+   "last": 5.0,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -44,7 +44,7 @@
    "event": "taipei-mayor-election-winner-20260813125857100",
    "eventTitle": "Taipei Mayor Election Winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 62.5,
+   "last": 59.5,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -56,7 +56,7 @@
    "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
    "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 4.8,
+   "last": 4.4,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -85,6 +85,42 @@
    "status": "live"
   },
   {
+   "id": "6967620",
+   "q": "11월 18일에 비트코인 가격이 6만 4천 달러 이상일까?",
+   "en": "Will the price of Bitcoin be above $64,000 on November 18?",
+   "cat": "코인",
+   "event": "bitcoin-above-on-november-18-2026",
+   "eventTitle": "Bitcoin above ___ on November 18?",
+   "endDate": "2026-11-18T17:00:00Z",
+   "last": 70.8,
+   "addedAt": "2026-11-16T01:05:21Z",
+   "status": "live"
+  },
+  {
+   "id": "6507388",
+   "q": "11월에 비트코인이 6만 달러까지 떨어질까?",
+   "en": "Will Bitcoin dip to $60,000 in November?",
+   "cat": "코인",
+   "event": "what-price-will-bitcoin-hit-in-november-2026",
+   "eventTitle": "What price will Bitcoin hit in November?",
+   "endDate": "2026-12-01T05:00:00Z",
+   "last": 37.5,
+   "addedAt": "2026-11-17T03:56:39Z",
+   "status": "live"
+  },
+  {
+   "id": "7018013",
+   "q": "11월 20일까지 젠슨 황의 4번째 불륜이 보도될까?",
+   "en": "Fourth Jensen Huang affair reported by November 20?",
+   "cat": "경제",
+   "event": "fourth-jensen-huang-affair-reported-by-december-31",
+   "eventTitle": "Fourth Jensen Huang affair reported by...?",
+   "endDate": "2026-11-21T04:59:00Z",
+   "last": 18.5,
+   "addedAt": "2026-11-17T03:56:39Z",
+   "status": "live"
+  },
+  {
    "id": "6891215",
    "q": "11월 9일~15일 사이 비트코인이 6만 2,000달러까지 하락할까?",
    "en": "Will Bitcoin dip to $62,000 November 9-15?",
@@ -94,19 +130,10 @@
    "endDate": "2026-11-16T05:00:00Z",
    "last": 2.2,
    "addedAt": "2026-11-15T01:05:32Z",
-   "status": "live"
-  },
-  {
-   "id": "6967620",
-   "q": "11월 18일에 비트코인 가격이 6만 4천 달러 이상일까?",
-   "en": "Will the price of Bitcoin be above $64,000 on November 18?",
-   "cat": "코인",
-   "event": "bitcoin-above-on-november-18-2026",
-   "eventTitle": "Bitcoin above ___ on November 18?",
-   "endDate": "2026-11-18T17:00:00Z",
-   "last": 62.0,
-   "addedAt": "2026-11-16T01:05:21Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "no",
+   "final": 2.2,
+   "resolvedAt": "2026-11-17T03:56:39Z"
   },
   {
    "id": "4397033",
