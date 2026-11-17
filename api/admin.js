@@ -407,7 +407,9 @@ module.exports = async (req, res) => {
       // 2026-11-17 이름 변경(Factory → Delphi Magazine) 전에 만들어진 초안도 새 이름으로 발행한다.
       d.html = d.html.split('Factory<span> Magazine</span>').join('Delphi<span> Magazine</span>')
         .split('Factory Magazine').join('Delphi Magazine')
-        .split('<span class="byline-avatar">FS</span>').join('<span class="byline-avatar">DM</span>');
+        .split('<span class="byline-avatar">FS</span>').join('<span class="byline-avatar">DM</span>')
+        .split('<a href="https://factorysignal-holdings.vercel.app" class="nav-holdings" target="_blank" rel="noopener">Factory<span> Holdings</span></a>')
+        .join('<a href="https://signalvip-predict.vercel.app" class="nav-holdings" target="_blank" rel="noopener">Vox<span>market</span></a>');
       const html64 = Buffer.from(d.html, 'utf8').toString('base64');
       if (html64.length > 60000) return res.status(413).json({ error: '기사가 너무 길어 발행 요청에 담을 수 없습니다.' });
       const r = await gh('/actions/workflows/publish-draft.yml/dispatches', {
