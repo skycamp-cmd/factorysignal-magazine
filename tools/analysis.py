@@ -395,7 +395,7 @@ def leaks(body_html):
 
 
 DISCLAIMER = ("이 글은 공개된 시장 데이터를 정리한 정보 제공용 보도이며, "
-              "투자 조언이나 권유가 아니다. Factory Magazine은 투자자문업 또는 "
+              "투자 조언이나 권유가 아니다. Delphi Magazine은 투자자문업 또는 "
               "유사투자자문업 등록 사업자가 아니고, 개별 종목·상품의 매매나 특정 "
               "시점의 매매를 권유하지 않는다. 수록된 수치는 발행 시점의 공개 데이터 "
               "기준이며 이후 달라질 수 있다. 투자 결정은 본인의 판단과 책임 하에 "
@@ -430,7 +430,7 @@ def render_page(fields, rows, today, macro=(), photo=None, video=None,
     <a href="index.html" class="back-link">← 아티클 목록으로</a>
     <span class="section-eyebrow">데이터분석</span>
     <h1>{esc(fields['title'])}</h1>
-    <div class="article-meta"><span class="byline-avatar">FS</span><span class="byline-name">{article.BYLINE}</span> · <span>{esc(fields['read_minutes'])}분 읽기</span> · <span>{today}</span></div>
+    <div class="article-meta"><span class="byline-avatar">DM</span><span class="byline-name">{article.BYLINE}</span> · <span>{esc(fields['read_minutes'])}분 읽기</span> · <span>{today}</span></div>
   </div>
 </header>
 
@@ -448,7 +448,7 @@ def render_page(fields, rows, today, macro=(), photo=None, video=None,
 
   <div class="disclaimer">
     이 글은 공개된 시장 데이터를 정리한 정보 제공용 보도이며, 투자 조언이나 권유가 아니다.
-    Factory Magazine은 투자자문업 또는 유사투자자문업 등록 사업자가 아니고, 개별 종목·상품의
+    Delphi Magazine은 투자자문업 또는 유사투자자문업 등록 사업자가 아니고, 개별 종목·상품의
     매매나 특정 시점의 매매를 권유하지 않는다. 수록된 수치는 발행 시점의 공개 데이터
     기준이며 이후 달라질 수 있다. 투자 결정은 본인의 판단과 책임 하에 이루어져야 한다.
   </div>

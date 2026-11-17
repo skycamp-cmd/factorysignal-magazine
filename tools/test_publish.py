@@ -275,7 +275,7 @@ class TitleRoundTrip(unittest.TestCase):
     """render()가 붙인 제목 접미사를 publish가 정확히 떼는지.
 
     2026-08-03 리브랜딩 때 두 곳에 브랜드명이 따로 박혀 있어 카드 제목에
-    " — Factory Magazine"이 남는 버그가 났다. 그 재발을 막는 테스트다.
+    " — Delphi Magazine"이 남는 버그가 났다. 그 재발을 막는 테스트다.
     """
 
     FIELDS = {

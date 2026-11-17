@@ -40,7 +40,7 @@ RESULT_WITHIN_DAYS = 10
 # 예측 분야 → 기사 분류(article.CATEGORIES). 첫 화면은 article.OLD_TO_MKT 로 다시 묶어 보여 준다.
 CAT_TO_ARTICLE = {"경제": "경제", "코인": "암호화폐", "스포츠": "스포츠", "테크·문화": "스타트업"}
 
-PROMPT = """너는 한국 독자용 예측 매체 'Factory Magazine'의 기자다. 해외 예측시장(Polymarket)의 질문 하나를 두고 기사를 쓴다.
+PROMPT = """너는 한국 독자용 예측 매체 'Delphi Magazine'의 기자다. 해외 예측시장(Polymarket)의 질문 하나를 두고 기사를 쓴다.
 
 [질문] {q}
 [원문 질문] {en}
@@ -245,7 +245,7 @@ def render(fields, body, read, photo, m, kind):
     <a href="index.html" class="back-link">← 첫 화면으로</a>
     <span class="section-eyebrow">{label} · {esc(eyebrow)}</span>
     <h1>{esc(fields['title'])}</h1>
-    <div class="article-meta"><span class="byline-avatar">FS</span><span class="byline-name">{article.BYLINE}</span> · <span>{read}분 읽기</span></div>
+    <div class="article-meta"><span class="byline-avatar">DM</span><span class="byline-name">{article.BYLINE}</span> · <span>{read}분 읽기</span></div>
   </div>
 </header>
 

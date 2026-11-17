@@ -1,4 +1,4 @@
-# Factory Magazine
+# Delphi Magazine
 
 정치·경제·암호화폐·스포츠·세계·스타트업 6개 카테고리의 정적 콘텐츠 사이트.
 유튜브 영상 링크 하나를 넣으면 그 내용을 요약한 기사를 만들어 사이트에 올린다.
@@ -346,7 +346,7 @@ py -3 -m unittest discover -p "test_*.py" -v
 태그 배지 색을 붙인다. 파이썬에 색을 복제하지 않는다.
 
 **브랜드명은 `tools/article.py`의 `BRAND` 상수 한 곳에만 있다.** 로고 마크업
-(`Factory<span> Magazine</span>`)만 `_NAV`·`_FOOTER` 템플릿에 직접 들어 있다.
+(`Delphi<span> Magazine</span>`)만 `_NAV`·`_FOOTER` 템플릿에 직접 들어 있다.
 
 자세한 내용은 `docs/superpowers/specs/2026-08-03-youtube-auto-article-design.md`.
 

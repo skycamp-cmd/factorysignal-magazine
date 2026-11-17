@@ -36,7 +36,7 @@ RESPONSE_SCHEMA = {
                          "read_minutes", "body_html", "poll_question", "thumb_keyword", "photo_query", "photo_subject"],
 }
 
-PROMPT = f"""너는 한국어 시사 매거진 Factory Magazine의 기자다.
+PROMPT = f"""너는 한국어 시사 매거진 Delphi Magazine의 기자다.
 첨부된 유튜브 영상을 보고, 그 내용을 정리한 기사 한 편을 쓴다.
 
 절대 규칙:

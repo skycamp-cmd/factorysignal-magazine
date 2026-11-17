@@ -20,7 +20,7 @@ ARTICLES = os.path.join(HERE, "..", "articles")
 ORIGIN = "https://magazine.kisi1.com"
 DEFAULT_IMAGE = ORIGIN + "/images/og.png"
 START, END = "<!-- OG:START -->", "<!-- OG:END -->"
-SITE_NAME = "Factory Magazine"
+SITE_NAME = "Delphi Magazine"
 
 
 def _meta(text, name):
@@ -50,7 +50,7 @@ def apply(text, slug):
     """페이지 HTML에 공유 태그 묶음을 넣는다(있으면 바꾼다)."""
     t = re.search(r"<title>(.*?)</title>", text, re.S)
     title = html.unescape(t.group(1)).strip() if t else SITE_NAME
-    title = re.sub(r"\s+—\s+Factory Magazine$", "", title) if slug != "index" else "Factory Magazine — 세계는 몇 %로 보고 있을까"
+    title = re.sub(r"\s+—\s+Delphi Magazine$", "", title) if slug != "index" else "Delphi Magazine — 세계는 몇 %로 보고 있을까"
     desc = _meta(text, "description") or "지금 가장 뜨거운 질문 10개. 해외 예측시장 확률을 보고 예/아니오로 가상 예측해 보세요."
     photo = _meta(text, "fs:photo")
     is_article = bool(_meta(text, "fs:date") or _meta(text, "fs:market"))

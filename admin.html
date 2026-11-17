@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex, nofollow" />
-<title>관리자 — Factory Magazine</title>
+<title>관리자 — Delphi Magazine</title>
 <!-- 관리자 페이지 (2026-10-20). 현황 · 승인 대기 초안 수정/발행/보류 · 구독자.
      API: api/admin.js (헤더 x-admin-key = MAGAZINE_ADMIN_SECRET). main.js를 싣지 않는다 —
      관리자 방문이 방문 통계에 섞이지 않게. -->
@@ -112,7 +112,7 @@ async function api(params, body) {
 }
 
 function renderLogin(msg = "") {
-  $("#app").innerHTML = `<div class="login card"><h2>Factory Magazine 관리자</h2>
+  $("#app").innerHTML = `<div class="login card"><h2>Delphi Magazine 관리자</h2>
     <input type="password" id="pw" placeholder="관리자 비밀번호" autofocus>
     <button class="btn primary" id="go" style="width:100%">들어가기</button>
     <p class="muted" style="margin-top:10px;color:var(--red)">${esc(msg)}</p></div>`;

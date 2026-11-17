@@ -42,7 +42,7 @@ SCHEMA = {
     "propertyOrdering": ["title", "description", "eyebrow", "body_html"],
 }
 
-PROMPT = """You are translating a Korean news article into English for Factory Magazine.
+PROMPT = """You are translating a Korean news article into English for Delphi Magazine.
 
 Rules:
 - Translate faithfully. Do not add facts, opinions, or context that is not in the source.
@@ -179,7 +179,7 @@ def render_en(ko, en):
     vid = ko["video"]
     disclaimer = (
         "This article summarises the content of a YouTube video and reflects the "
-        "personal views of the people appearing in it. Factory Magazine has not "
+        "personal views of the people appearing in it. Delphi Magazine has not "
         "verified or endorsed these statements.")
     if ko["category"] in ("암호화폐", "경제"):
         disclaimer += (" It is not investment advice. Investments carry the risk of "
@@ -208,7 +208,7 @@ def render_en(ko, en):
     <a href="index.html" class="back-link">← All articles</a><a href="{esc(ko['slug'])}.html" class="lang-switch">한국어</a>
     <span class="section-eyebrow">{esc(article.EYEBROW_EN.get(ko['eyebrow'], en['eyebrow']))}</span>
     <h1>{esc(en['title'])}</h1>
-    <div class="article-meta"><span class="byline-avatar">FS</span><span class="byline-name">{article.BYLINE}</span> · <span>{esc(ko['read'])} min read</span></div>
+    <div class="article-meta"><span class="byline-avatar">DM</span><span class="byline-name">{article.BYLINE}</span> · <span>{esc(ko['read'])} min read</span></div>
   </div>
 </header>
 

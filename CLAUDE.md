@@ -1,6 +1,6 @@
-# Factory Magazine — site context
+# Delphi Magazine — site context
 
-Static HTML/CSS content site for **Factory Magazine**, the content/media brand under
+Static HTML/CSS content site for **Delphi Magazine**, the content/media brand under
 Factory Holdings. This is its OWN standalone repo/Vercel project (`factorysignal-magazine`),
 deliberately split out from the `predict-analytics` repo (which holds the actual app) so that
 magazine writers/editors can get repo access without ever seeing the app's code. Deploys
@@ -12,7 +12,7 @@ automatically on push to `main`.
 brands itself **"Factory Signal"** in its own UI (see `polymarket-news/index.html`'s header
 logo — capitalized, two words, not the old camelCase "FactorySignal" or one-word
 "factorysignal"). The parent company is **"Factory Holdings"** (also two words, capitalized —
-not "factorysignal Holdings"). This site is **"Factory Magazine"** everywhere a visible label
+not "factorysignal Holdings"). This site is **"Delphi Magazine"** everywhere a visible label
 appears (nav logo, page titles, footer brand text, byline, copyright line) — deliberately
 dropped "Signal" from its own name to stay distinct from the app, and capitalizes "Factory"
 like the other two properties. Don't reintroduce "factorysignal"/"FactorySignal Magazine"/
@@ -63,7 +63,7 @@ here or vice versa without being asked.
 - Article thumbnails use a **category-colored gradient with bold text** (e.g. "TOKEN",
   "PRODUCT", "INFRA"), not a plain dark gradient — mimics Outstanding's colorful graphic
   thumbnails
-- Byline row: small "FS" avatar circle + "Factory Magazine 팀", bold/dark (not faint gray) —
+- Byline row: small "FS" avatar circle + "Delphi Magazine 팀", bold/dark (not faint gray) —
   echoes Outstanding's author-forward card style
 
 ## Sidebar (articles/index.html)

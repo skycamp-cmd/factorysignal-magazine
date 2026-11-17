@@ -76,11 +76,11 @@ def normalize_eyebrow(category, eyebrow, kind=None):
             return target
     return allowed[0]
 
-# 브랜드명은 여기 한 곳에만 둔다. 2026-08-03 리브랜딩(factorysignal -> Factory Magazine)
+# 브랜드명은 여기 한 곳에만 둔다. 2026-08-03 리브랜딩(factorysignal -> Delphi Magazine)
 # 때, render()가 붙이는 제목 접미사와 publish.py가 떼는 접미사가 각각 하드코딩돼 있어서
-# 카드 제목에 " — Factory Magazine"이 그대로 남는 버그가 났다.
+# 카드 제목에 " — Delphi Magazine"이 그대로 남는 버그가 났다.
 # 붙이는 쪽과 떼는 쪽이 반드시 같은 값을 쓰게 한다.
-BRAND = "Factory Magazine"
+BRAND = "Delphi Magazine"
 TITLE_SUFFIX = f" — {BRAND}"
 BYLINE = f"{BRAND} 팀"
 
@@ -214,7 +214,7 @@ def tidy_body(body_html):
 def disclaimer_for(category):
     text = (
         "이 글은 유튜브 영상의 내용을 요약·정리한 것이며, 영상 출연자 개인의 견해입니다. "
-        "Factory Magazine이 검증하거나 보증하는 내용이 아닙니다."
+        "Delphi Magazine이 검증하거나 보증하는 내용이 아닙니다."
     )
     if category in _MONEY_CATS:
         text += (
@@ -228,7 +228,7 @@ _NAV = """<nav class="nav">
   <button class="nav-toggle" aria-label="메뉴 열기">
     <span></span><span></span><span></span>
   </button>
-  <a href="index.html" class="nav-logo">Factory<span> Magazine</span></a>
+  <a href="index.html" class="nav-logo">Delphi<span> Magazine</span></a>
   <button type="button" class="nav-search" aria-label="검색" title="검색 (준비 중)">
     <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
   </button>
@@ -243,7 +243,7 @@ _FOOTER = """<footer>
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo">Factory<span> Magazine</span></a>
+        <a href="index.html" class="nav-logo">Delphi<span> Magazine</span></a>
         <p class="footer-tagline">노이즈 속에서, 신호를 찾습니다.</p>
         <p>세계가 몇 %로 보는지, 확률로 읽는 뉴스를 만드는 매체입니다.</p>
       </div>
@@ -267,7 +267,7 @@ _FOOTER = """<footer>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Factory Magazine</span>
+      <span>© 2026 Delphi Magazine</span>
     </div>
   </div>
 </footer>"""
@@ -338,7 +338,7 @@ def thumb_html(meta):
                else f'<strong class="thumb-figure thumb-figure--word">{esc(meta.get("eyebrow") or meta["category"])}</strong>')
         return (f'            <div class="article-thumb article-thumb--brand">'
                 f'<span class="thumb-cat">{esc(meta["category"])}</span>{big}'
-                f'<span class="thumb-mark">Factory Magazine</span>'
+                f'<span class="thumb-mark">Delphi Magazine</span>'
                 f'</div>{nl}')
     photo = meta.get("photo") or ""
     klass = "article-thumb article-thumb--data"
@@ -370,7 +370,7 @@ def card_html(meta):
         f'              <div class="article-tag">{esc(meta["eyebrow"])}</div>\n'
         f'              <h3>{esc(meta["title"])}</h3>\n'
         f'              <p>{esc(meta["description"])}</p>\n'
-        f'              <div class="article-meta"><span class="byline-avatar">FS</span>'
+        f'              <div class="article-meta"><span class="byline-avatar">DM</span>'
         f'<span class="byline-name">{BYLINE}</span><span>·</span>'
         f'<span>{esc(meta["read"])}분 읽기</span>{date_html}</div>\n'
         f'            </div>\n'
@@ -482,7 +482,7 @@ def render(fields, url):
     <a href="index.html" class="back-link">← 아티클 목록으로</a>
     <span class="section-eyebrow">{esc(eyebrow)}</span>
     <h1>{esc(fields['title'])}</h1>
-    <div class="article-meta"><span class="byline-avatar">FS</span><span class="byline-name">{BYLINE}</span> · <span>{esc(fields['read_minutes'])}분 읽기</span></div>
+    <div class="article-meta"><span class="byline-avatar">DM</span><span class="byline-name">{BYLINE}</span> · <span>{esc(fields['read_minutes'])}분 읽기</span></div>
   </div>
 </header>
 

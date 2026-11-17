@@ -128,7 +128,7 @@ function applyEdits(html, f) {
   const desc = String(f.description || '').trim().slice(0, 240);
   const poll = String(f.poll || '').trim().slice(0, 80);
   if (title) {
-    html = html.replace(/<title>[\s\S]*?( — Factory Magazine)?<\/title>/, `<title>${esc(title)} — Factory Magazine</title>`)
+    html = html.replace(/<title>[\s\S]*?( — Delphi Magazine)?<\/title>/, `<title>${esc(title)} — Delphi Magazine</title>`)
       .replace(/<h1>[\s\S]*?<\/h1>/, `<h1>${esc(title)}</h1>`);
   }
   if (desc) html = html.replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${esc(desc)}" />`);
@@ -274,7 +274,7 @@ async function polls(origin) {
     try {
       const h = await (await fetch(origin + r.url, { signal: AbortSignal.timeout(5000) })).text();
       const t = h.match(/<title>([^<]*)<\/title>/);
-      r.title = t ? unesc(t[1]).replace(/ — Factory Magazine$/, '') : r.slug;
+      r.title = t ? unesc(t[1]).replace(/ — (Delphi|Factory) Magazine$/, '') : r.slug;
       r.question = meta(h, 'fs:poll');
       r.category = meta(h, 'fs:category');
       r.date = meta(h, 'fs:date');
@@ -404,6 +404,10 @@ module.exports = async (req, res) => {
       if (!GH) return res.status(503).json({ error: 'GITHUB_DISPATCH_TOKEN 이 없습니다.' });
       // 수정이 반영된 기사 HTML 자체를 워크플로 입력으로 넘긴다 (GitHub 쪽에 저장소 열쇠가 없어도 되게).
       const d = JSON.parse(v);
+      // 2026-11-17 이름 변경(Factory → Delphi Magazine) 전에 만들어진 초안도 새 이름으로 발행한다.
+      d.html = d.html.split('Factory<span> Magazine</span>').join('Delphi<span> Magazine</span>')
+        .split('Factory Magazine').join('Delphi Magazine')
+        .split('<span class="byline-avatar">FS</span>').join('<span class="byline-avatar">DM</span>');
       const html64 = Buffer.from(d.html, 'utf8').toString('base64');
       if (html64.length > 60000) return res.status(413).json({ error: '기사가 너무 길어 발행 요청에 담을 수 없습니다.' });
       const r = await gh('/actions/workflows/publish-draft.yml/dispatches', {
