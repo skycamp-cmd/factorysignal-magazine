@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T02:56:01Z",
+ "updatedAt": "2026-11-19T02:37:05Z",
  "markets": [
   {
    "id": "682705",
@@ -20,7 +20,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 3.2,
+   "last": 2.3,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -32,7 +32,7 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 4.5,
+   "last": 4.0,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -56,20 +56,8 @@
    "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
    "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 3.0,
+   "last": 2.0,
    "addedAt": "2026-11-07T00:57:55Z",
-   "status": "live"
-  },
-  {
-   "id": "5339986",
-   "q": "이스라엘과 이란의 휴전이 11월 15일까지 지속될까?",
-   "en": "Israel x Iran ceasefire continues through November 15?",
-   "cat": "정치·세계",
-   "event": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
-   "eventTitle": "Israel x Iran ceasefire continues through...?",
-   "endDate": "2026-11-16T04:59:00Z",
-   "last": 98.6,
-   "addedAt": "2026-11-09T00:57:48Z",
    "status": "live"
   },
   {
@@ -86,18 +74,6 @@
    "pending": true
   },
   {
-   "id": "6967620",
-   "q": "11월 18일에 비트코인 가격이 6만 4천 달러 이상일까?",
-   "en": "Will the price of Bitcoin be above $64,000 on November 18?",
-   "cat": "코인",
-   "event": "bitcoin-above-on-november-18-2026",
-   "eventTitle": "Bitcoin above ___ on November 18?",
-   "endDate": "2026-11-18T17:00:00Z",
-   "last": 59.8,
-   "addedAt": "2026-11-16T01:05:21Z",
-   "status": "live"
-  },
-  {
    "id": "6507388",
    "q": "11월에 비트코인이 6만 달러까지 떨어질까?",
    "en": "Will Bitcoin dip to $60,000 in November?",
@@ -105,7 +81,7 @@
    "event": "what-price-will-bitcoin-hit-in-november-2026",
    "eventTitle": "What price will Bitcoin hit in November?",
    "endDate": "2026-12-01T05:00:00Z",
-   "last": 39.5,
+   "last": 58.5,
    "addedAt": "2026-11-17T03:56:39Z",
    "status": "live"
   },
@@ -117,9 +93,39 @@
    "event": "fourth-jensen-huang-affair-reported-by-december-31",
    "eventTitle": "Fourth Jensen Huang affair reported by...?",
    "endDate": "2026-11-21T04:59:00Z",
-   "last": 8.5,
+   "last": 4.3,
    "addedAt": "2026-11-17T03:56:39Z",
    "status": "live"
+  },
+  {
+   "id": "5339986",
+   "q": "이스라엘과 이란의 휴전이 11월 15일까지 지속될까?",
+   "en": "Israel x Iran ceasefire continues through November 15?",
+   "cat": "정치·세계",
+   "event": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+   "eventTitle": "Israel x Iran ceasefire continues through...?",
+   "endDate": "2026-11-16T04:59:00Z",
+   "last": 98.6,
+   "addedAt": "2026-11-09T00:57:48Z",
+   "status": "resolved",
+   "outcome": "yes",
+   "final": 98.6,
+   "resolvedAt": "2026-11-19T02:37:05Z"
+  },
+  {
+   "id": "6967620",
+   "q": "11월 18일에 비트코인 가격이 6만 4천 달러 이상일까?",
+   "en": "Will the price of Bitcoin be above $64,000 on November 18?",
+   "cat": "코인",
+   "event": "bitcoin-above-on-november-18-2026",
+   "eventTitle": "Bitcoin above ___ on November 18?",
+   "endDate": "2026-11-18T17:00:00Z",
+   "last": 59.8,
+   "addedAt": "2026-11-16T01:05:21Z",
+   "status": "resolved",
+   "outcome": "no",
+   "final": 59.8,
+   "resolvedAt": "2026-11-19T02:37:05Z"
   },
   {
    "id": "6891215",
