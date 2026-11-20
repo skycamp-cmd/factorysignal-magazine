@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T02:37:05Z",
+ "updatedAt": "2026-11-20T02:22:06Z",
  "markets": [
   {
    "id": "682705",
@@ -20,7 +20,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 2.3,
+   "last": 3.0,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -32,7 +32,7 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 4.0,
+   "last": 3.0,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -81,7 +81,7 @@
    "event": "what-price-will-bitcoin-hit-in-november-2026",
    "eventTitle": "What price will Bitcoin hit in November?",
    "endDate": "2026-12-01T05:00:00Z",
-   "last": 58.5,
+   "last": 72.5,
    "addedAt": "2026-11-17T03:56:39Z",
    "status": "live"
   },
@@ -93,8 +93,32 @@
    "event": "fourth-jensen-huang-affair-reported-by-december-31",
    "eventTitle": "Fourth Jensen Huang affair reported by...?",
    "endDate": "2026-11-21T04:59:00Z",
-   "last": 4.3,
+   "last": 1.4,
    "addedAt": "2026-11-17T03:56:39Z",
+   "status": "live"
+  },
+  {
+   "id": "3399468",
+   "q": "이스라엘과 이란의 휴전이 12월 31일까지 유지될까?",
+   "en": "Israel x Iran ceasefire continues through December 31?",
+   "cat": "정치·세계",
+   "event": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+   "eventTitle": "Israel x Iran ceasefire continues through...?",
+   "endDate": "2026-12-31T20:29:00Z",
+   "last": 65.5,
+   "addedAt": "2026-11-20T02:22:06Z",
+   "status": "live"
+  },
+  {
+   "id": "7018477",
+   "q": "11월 20일 비트코인 가격이 6만 달러 이상일까?",
+   "en": "Will the price of Bitcoin be above $60,000 on November 20?",
+   "cat": "코인",
+   "event": "bitcoin-above-on-november-20-2026",
+   "eventTitle": "Bitcoin above ___ on November 20?",
+   "endDate": "2026-11-20T17:00:00Z",
+   "last": 79.5,
+   "addedAt": "2026-11-20T02:22:06Z",
    "status": "live"
   },
   {
