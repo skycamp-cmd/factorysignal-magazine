@@ -151,7 +151,31 @@ def is_daily_quota(body):
     return "free_tier_requests" in body or "PerDay" in body
 
 
+# 기본 모델이 과부하(503)거나 이 키로 못 쓰면(404) 차례로 바꿔 시도할 모델 (2026-11-20).
+# 11/18·19 기본 모델이 "high demand" 503을 계속 내서 기사 초안이 0편이었다.
+FALLBACK_MODELS = ["gemini-4-hydrogen", "gemini-2.5-flash", "gemini-2.5-flash-lite"]
+
+
 def request(cfg, payload, timeout=600, retries=3):
+    """기본 모델로 시도하고, 과부하·사용 불가면 대체 모델로 넘어간다. (JSON, usage) 반환."""
+    models = [cfg["gemini_model"]] + [m for m in cfg.get("gemini_fallback_models", FALLBACK_MODELS)
+                                      if m != cfg["gemini_model"]]
+    last_err = None
+    for i, model in enumerate(models):
+        try:
+            return _request_model(dict(cfg, gemini_model=model), payload, timeout, retries)
+        except RuntimeError as e:
+            msg = str(e)
+            # 과부하(503)·모델 없음(404)일 때만 다음 모델로. 한도 소진·키 문제 등은 그대로 올린다.
+            if ("HTTP 503" in msg or "HTTP 404" in msg) and i + 1 < len(models):
+                print(f"  모델 {model} 사용 불가({msg[:8]}) — {models[i + 1]} 로 전환")
+                last_err = e
+                continue
+            raise
+    raise last_err
+
+
+def _request_model(cfg, payload, timeout=600, retries=3):
     """Gemini 호출 + 키 순환 + 재시도. (JSON 딕셔너리, usage) 를 반환한다.
 
     draft.py(초안)와 translate.py(번역)가 같이 쓴다. 번역이 이 로직을 안 쓰고 단일 키로

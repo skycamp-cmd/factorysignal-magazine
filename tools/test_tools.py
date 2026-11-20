@@ -280,7 +280,7 @@ class GeminiKeys(unittest.TestCase):
         429만 처리하던 로직으로는 첫 호출부터 죽는다.
         """
         import inspect
-        src = inspect.getsource(gemini.request)
+        src = inspect.getsource(gemini._request_model)   # 키 순환은 모델별 호출(_request_model)에 있다
         self.assertIn("401", src)
         self.assertIn("403", src)
         self.assertIn("404", src)
