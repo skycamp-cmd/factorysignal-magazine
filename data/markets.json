@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T02:22:06Z",
+ "updatedAt": "2026-11-21T02:22:59Z",
  "markets": [
   {
    "id": "682705",
@@ -20,7 +20,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 3.0,
+   "last": 8.2,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -32,7 +32,7 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 3.0,
+   "last": 3.3,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -44,7 +44,7 @@
    "event": "taipei-mayor-election-winner-20260813125857100",
    "eventTitle": "Taipei Mayor Election Winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 59.5,
+   "last": 64.5,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -56,7 +56,7 @@
    "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
    "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 2.0,
+   "last": 1.7,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -72,18 +72,6 @@
    "addedAt": "2026-11-14T01:28:21Z",
    "status": "live",
    "pending": true
-  },
-  {
-   "id": "6507388",
-   "q": "11월에 비트코인이 6만 달러까지 떨어질까?",
-   "en": "Will Bitcoin dip to $60,000 in November?",
-   "cat": "코인",
-   "event": "what-price-will-bitcoin-hit-in-november-2026",
-   "eventTitle": "What price will Bitcoin hit in November?",
-   "endDate": "2026-12-01T05:00:00Z",
-   "last": 72.5,
-   "addedAt": "2026-11-17T03:56:39Z",
-   "status": "live"
   },
   {
    "id": "7018013",
@@ -105,9 +93,48 @@
    "event": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
    "eventTitle": "Israel x Iran ceasefire continues through...?",
    "endDate": "2026-12-31T20:29:00Z",
-   "last": 65.5,
+   "last": 60.5,
    "addedAt": "2026-11-20T02:22:06Z",
    "status": "live"
+  },
+  {
+   "id": "701501",
+   "q": "비트코인이 2026년 12월 31일까지 5만 5천 달러까지 떨어질까?",
+   "en": "Will Bitcoin dip to $55,000 by December 31, 2026?",
+   "cat": "코인",
+   "event": "what-price-will-bitcoin-hit-before-2027",
+   "eventTitle": "What price will Bitcoin hit in 2026?",
+   "endDate": "2027-01-01T05:00:00Z",
+   "last": 62.5,
+   "addedAt": "2026-11-21T02:22:59Z",
+   "status": "live"
+  },
+  {
+   "id": "4620900",
+   "q": "연준이 2026년에 기준금리를 추가 인상할까?",
+   "en": "Another Fed rate hike in 2026?",
+   "cat": "경제",
+   "event": "another-fed-rate-hike-in-2026",
+   "eventTitle": "Another Fed rate hike in 2026?",
+   "endDate": "2026-12-10T04:59:00Z",
+   "last": 91.4,
+   "addedAt": "2026-11-21T02:22:59Z",
+   "status": "live"
+  },
+  {
+   "id": "6507388",
+   "q": "11월에 비트코인이 6만 달러까지 떨어질까?",
+   "en": "Will Bitcoin dip to $60,000 in November?",
+   "cat": "코인",
+   "event": "what-price-will-bitcoin-hit-in-november-2026",
+   "eventTitle": "What price will Bitcoin hit in November?",
+   "endDate": "2026-12-01T05:00:00Z",
+   "last": 72.5,
+   "addedAt": "2026-11-17T03:56:39Z",
+   "status": "resolved",
+   "outcome": "yes",
+   "final": 72.5,
+   "resolvedAt": "2026-11-21T02:22:59Z"
   },
   {
    "id": "7018477",
@@ -119,7 +146,10 @@
    "endDate": "2026-11-20T17:00:00Z",
    "last": 79.5,
    "addedAt": "2026-11-20T02:22:06Z",
-   "status": "live"
+   "status": "resolved",
+   "outcome": "no",
+   "final": 79.5,
+   "resolvedAt": "2026-11-21T02:22:59Z"
   },
   {
    "id": "5339986",
