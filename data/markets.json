@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T02:22:59Z",
+ "updatedAt": "2026-11-22T01:22:51Z",
  "markets": [
   {
    "id": "682705",
@@ -20,7 +20,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 8.2,
+   "last": 6.8,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -32,7 +32,7 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 3.3,
+   "last": 4.0,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -44,7 +44,7 @@
    "event": "taipei-mayor-election-winner-20260813125857100",
    "eventTitle": "Taipei Mayor Election Winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 64.5,
+   "last": 65.5,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -56,7 +56,7 @@
    "event": "pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433",
    "eventTitle": "Pete Hegseth out as Secretary of Defense by November 30?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 1.7,
+   "last": 1.8,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -74,18 +74,6 @@
    "pending": true
   },
   {
-   "id": "7018013",
-   "q": "11월 20일까지 젠슨 황의 4번째 불륜이 보도될까?",
-   "en": "Fourth Jensen Huang affair reported by November 20?",
-   "cat": "경제",
-   "event": "fourth-jensen-huang-affair-reported-by-december-31",
-   "eventTitle": "Fourth Jensen Huang affair reported by...?",
-   "endDate": "2026-11-21T04:59:00Z",
-   "last": 1.4,
-   "addedAt": "2026-11-17T03:56:39Z",
-   "status": "live"
-  },
-  {
    "id": "3399468",
    "q": "이스라엘과 이란의 휴전이 12월 31일까지 유지될까?",
    "en": "Israel x Iran ceasefire continues through December 31?",
@@ -93,7 +81,7 @@
    "event": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
    "eventTitle": "Israel x Iran ceasefire continues through...?",
    "endDate": "2026-12-31T20:29:00Z",
-   "last": 60.5,
+   "last": 63.5,
    "addedAt": "2026-11-20T02:22:06Z",
    "status": "live"
   },
@@ -105,7 +93,7 @@
    "event": "what-price-will-bitcoin-hit-before-2027",
    "eventTitle": "What price will Bitcoin hit in 2026?",
    "endDate": "2027-01-01T05:00:00Z",
-   "last": 62.5,
+   "last": 60.5,
    "addedAt": "2026-11-21T02:22:59Z",
    "status": "live"
   },
@@ -117,9 +105,36 @@
    "event": "another-fed-rate-hike-in-2026",
    "eventTitle": "Another Fed rate hike in 2026?",
    "endDate": "2026-12-10T04:59:00Z",
-   "last": 91.4,
+   "last": 93.2,
    "addedAt": "2026-11-21T02:22:59Z",
    "status": "live"
+  },
+  {
+   "id": "691340",
+   "q": "2026년 12월 31일까지 AI 버블이 붕괴할까?",
+   "en": "AI bubble burst in 2026?",
+   "cat": "경제",
+   "event": "ai-bubble-burst-by",
+   "eventTitle": "AI bubble burst by...?",
+   "endDate": "2027-01-01T04:59:00Z",
+   "last": 61.8,
+   "addedAt": "2026-11-22T01:22:51Z",
+   "status": "live"
+  },
+  {
+   "id": "7018013",
+   "q": "11월 20일까지 젠슨 황의 4번째 불륜이 보도될까?",
+   "en": "Fourth Jensen Huang affair reported by November 20?",
+   "cat": "경제",
+   "event": "fourth-jensen-huang-affair-reported-by-december-31",
+   "eventTitle": "Fourth Jensen Huang affair reported by...?",
+   "endDate": "2026-11-21T04:59:00Z",
+   "last": 1.4,
+   "addedAt": "2026-11-17T03:56:39Z",
+   "status": "resolved",
+   "outcome": "no",
+   "final": 1.4,
+   "resolvedAt": "2026-11-22T01:22:51Z"
   },
   {
    "id": "6507388",
