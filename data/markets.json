@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T01:22:51Z",
+ "updatedAt": "2026-11-23T01:47:11Z",
  "markets": [
   {
    "id": "682705",
@@ -20,7 +20,7 @@
    "event": "fed-decision-in-december-20260729232808632",
    "eventTitle": "Fed Decision in December?",
    "endDate": "2026-12-09T23:59:00Z",
-   "last": 6.8,
+   "last": 6.4,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -32,7 +32,7 @@
    "event": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "eventTitle": "US announces end of Iranian blockade by...?",
    "endDate": "2026-12-01T04:59:00Z",
-   "last": 4.0,
+   "last": 2.6,
    "addedAt": "2026-10-29T05:45:42Z",
    "status": "live"
   },
@@ -44,7 +44,7 @@
    "event": "taipei-mayor-election-winner-20260813125857100",
    "eventTitle": "Taipei Mayor Election Winner",
    "endDate": "2026-11-29T04:59:00Z",
-   "last": 65.5,
+   "last": 69.5,
    "addedAt": "2026-11-07T00:57:55Z",
    "status": "live"
   },
@@ -81,7 +81,7 @@
    "event": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
    "eventTitle": "Israel x Iran ceasefire continues through...?",
    "endDate": "2026-12-31T20:29:00Z",
-   "last": 63.5,
+   "last": 67.5,
    "addedAt": "2026-11-20T02:22:06Z",
    "status": "live"
   },
@@ -93,7 +93,7 @@
    "event": "what-price-will-bitcoin-hit-before-2027",
    "eventTitle": "What price will Bitcoin hit in 2026?",
    "endDate": "2027-01-01T05:00:00Z",
-   "last": 60.5,
+   "last": 52.5,
    "addedAt": "2026-11-21T02:22:59Z",
    "status": "live"
   },
@@ -105,7 +105,7 @@
    "event": "another-fed-rate-hike-in-2026",
    "eventTitle": "Another Fed rate hike in 2026?",
    "endDate": "2026-12-10T04:59:00Z",
-   "last": 93.2,
+   "last": 94.0,
    "addedAt": "2026-11-21T02:22:59Z",
    "status": "live"
   },
@@ -117,7 +117,7 @@
    "event": "ai-bubble-burst-by",
    "eventTitle": "AI bubble burst by...?",
    "endDate": "2027-01-01T04:59:00Z",
-   "last": 61.8,
+   "last": 51.4,
    "addedAt": "2026-11-22T01:22:51Z",
    "status": "live"
   },
